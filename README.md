@@ -45,8 +45,6 @@ __2.	Specialized Features for S Pen SDK__
 
 Contact us
 ------------
-S Pen SDK Forum: [http://developer.samsung.com/forum/android/s-pen-sdk]([http://developer.samsung.com/forum/android/s-pen-sdk)
-
-Twitter: [https://twitter.com/samsung_dev](https://twitter.com/samsung_dev)
-
-Facebook: [http://www.facebook.com/groups/samsungdevelopers/](http://www.facebook.com/groups/samsungdevelopers/)
+ - S Pen SDK Forum: [http://developer.samsung.com/forum/android/s-pen-sdk]([http://developer.samsung.com/forum/android/s-pen-sdk)
+ - Twitter: [https://twitter.com/samsung_dev](https://twitter.com/samsung_dev)
+ - Facebook: [http://www.facebook.com/groups/samsungdevelopers/](http://www.facebook.com/groups/samsungdevelopers/)
