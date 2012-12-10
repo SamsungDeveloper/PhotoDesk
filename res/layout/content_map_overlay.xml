@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="wrap_content" 
+	android:layout_height="wrap_content"
+	android:orientation="horizontal" 
+	android:id="@+id/meida_main_layout"
+	android:background="@drawable/media_overlay_bg_selector" 
+	>
+
+	<LinearLayout
+	    android:id="@+id/meida_inner_layout"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:background="?attr/baseSelector"
+	    android:clickable="true"
+	    android:gravity="center_vertical"
+	    android:orientation="horizontal"
+	    android:paddingLeft="5dip"
+	    android:paddingRight="5dip" >
+
+		<ImageView
+		    android:id="@+id/iVMedia"
+		    android:layout_width="@dimen/map_overlay_img_width"
+		    android:layout_height="@dimen/map_overlay_img_heigh"
+		    android:background="#666666"
+		    android:padding="1dp"
+		    android:scaleType="fitXY" />
+		
+		<TextView
+		    android:id="@+id/media_item_title"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+			android:layout_marginLeft="15dp"
+		    android:text="text"
+		    android:textColor="#FF000000"
+		    android:textSize="@dimen/x_large_text_size" />
+
+		<ImageButton
+		    android:id="@+id/iBArrow"
+		    android:layout_width="@dimen/map_overlay_arrow_size"
+		    android:layout_height="@dimen/map_overlay_arrow_size"
+		    android:layout_marginLeft="15dp"
+		    android:layout_marginRight="5dp"
+		    android:background="@drawable/icon_arrow"
+		    android:clickable="false" />
+
+	</LinearLayout>
+	
+
+</LinearLayout>

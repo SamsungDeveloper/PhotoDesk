@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/folder_view_list_grid_selector"
+    android:gravity="center"
+    android:padding="@dimen/folder_list_padding" >
+
+    <ImageView
+        android:id="@+id/ivFolderImage"
+        android:layout_width="@dimen/list_thumb_width"
+        android:layout_height="@dimen/list_thumb_height"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/shadow_folder"
+        android:paddingBottom="@dimen/folder_list_thumb_padding_bottom"
+        android:paddingLeft="@dimen/folder_list_thumb_padding_left"
+        android:paddingRight="@dimen/folder_list_thumb_padding_right"
+        android:paddingTop="@dimen/folder_list_thumb_padding_top"
+        android:scaleType="fitXY" />
+
+    <ImageView
+        android:id="@+id/iVCheck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/ivFolderImage"
+        android:layout_alignTop="@+id/ivFolderImage"
+        android:layout_marginRight="@dimen/folder_list_image_check_margin_right"
+        android:layout_marginTop="@dimen/folder_list_image_check_margin_top"
+        android:src="?attr/folderViewSelectCheckBox"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/iVProtect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/ivFolderImage"
+        android:layout_alignRight="@+id/ivFolderImage"
+        android:layout_marginBottom="@dimen/folder_list_image_protect_margin_bottom"
+        android:layout_marginRight="@dimen/folder_list_image_protect_margin_right"
+        android:src="@drawable/icon_protection_s"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_below="@id/ivFolderImage"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:gravity="right"
+            android:singleLine="true"
+            android:textColor="?attr/folderViewBaseText"
+            android:textSize="@dimen/small_text_size" />
+
+        <TextView
+            android:id="@+id/tvCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:gravity="left"
+            android:singleLine="true"
+            android:textColor="?attr/folderViewBaseText"
+            android:textSize="@dimen/small_text_size" />
+    </LinearLayout>
+
+</RelativeLayout>

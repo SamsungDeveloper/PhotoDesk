@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/popupBg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/lLTitleBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/popupTopbarBg"
+        android:gravity="center_vertical"
+        android:minHeight="@dimen/dialog_topbar_height"
+        android:paddingLeft="@dimen/dialog_topbar_padding_left"
+        android:paddingRight="@dimen/dialog_topbar_padding_right" >
+
+        <ImageView
+            android:id="@+id/ivIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:text="title"
+            android:textColor="#ffffffff"
+            android:textSize="@dimen/dialog_title_text_size" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/body"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:baselineAligned="false"
+        android:orientation="horizontal"
+        android:paddingBottom="10dip"
+        android:paddingLeft="8dip"
+        android:paddingRight="8dip"
+        android:paddingTop="10dip" >
+
+        <ProgressBar
+            android:id="@+id/progress"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="12dip"
+            android:max="10000" />
+
+        <TextView
+            android:id="@+id/message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/dialog_title_text_size" />
+    </LinearLayout>
+</LinearLayout>

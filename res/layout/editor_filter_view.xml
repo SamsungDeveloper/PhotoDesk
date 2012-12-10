@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/pop_list_bg"
+    android:id="@+id/filter_view">
+	
+    <RelativeLayout 
+		    android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+    	android:background="@drawable/pop_list_topbar">
+		<TextView 
+		    android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="@dimen/clipart_view_margin"
+			android:layout_alignParentLeft="true"
+    		android:layout_centerVertical="true"
+    		android:textSize="@dimen/clipart_view_title_font_size"
+			android:text="@string/filter_title"/>
+        <ImageButton
+            android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:layout_alignParentRight="true"
+    		android:layout_centerVertical="true"
+    		android:layout_marginRight="@dimen/clipart_view_margin"
+    		android:src="@drawable/icon_close"
+    		android:background="@null"
+    		android:id="@+id/filter_view_close_btn"/>
+    </RelativeLayout>
+	
+    <com.samsung.photodesk.editor.EditorFilterGridView 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/filter_view_margin_left"
+        android:layout_marginRight="@dimen/filter_view_margin_right"
+        android:layout_marginTop="@dimen/filter_gv_margin_top"
+        android:layout_marginBottom="@dimen/filter_gv_margin_bottom"
+        android:horizontalSpacing="@dimen/filter_gv_horizontal_spacing"
+        android:verticalSpacing="@dimen/filter_gv_vertical_spacing"
+        android:listSelector="@drawable/gridview_selector"
+        android:stretchMode="columnWidth"
+        android:numColumns="4"        
+        android:id="@+id/filter_gv"/>
+
+</LinearLayout>

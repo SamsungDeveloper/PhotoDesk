@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/editor"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.samsung.photodesk.editor.EditorTopBar
+        android:id="@+id/top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:layout_gravity="center"
+        android:background="?attr/actionBarBG"/>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/top_bar">
+
+        <com.samsung.photodesk.editor.EditorDrawingMenuBar
+            android:id="@+id/drawing_bar_container"
+            android:layout_width="@dimen/photodesk_left_menu_width"
+    		android:layout_height="match_parent"
+            android:background="?attr/folderViewBG" />
+
+        <LinearLayout
+            android:layout_width="@dimen/photodesk_left_menu_line_width"
+            android:layout_height="match_parent"
+            android:background="?attr/contentViewLeftLength" >
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/editor_area"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="?attr/contentViewBG" >
+
+            <RelativeLayout
+                android:id="@+id/scanvas_container"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true" ></RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/setting_container"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="@dimen/spen_setting_margin"
+                android:layout_marginTop="@dimen/spen_setting_margin"
+                android:background="#00000000" >
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="?android:attr/actionBarSize"
+        android:background="?attr/actionBarShadow" />
+
+</RelativeLayout>

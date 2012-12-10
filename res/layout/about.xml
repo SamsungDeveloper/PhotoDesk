@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:padding="20dp" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_launcher" />
+
+        <TextView
+            android:id="@+id/TVVersion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dip"
+            android:text="Version : 1.0.4"
+            android:textColor="#FFFFFFFF"
+            android:textSize="@dimen/large_text_size"
+            android:typeface="sans" >
+        </TextView>
+		
+		<TextView android:textColor="?attr/settingAboutTextColor"
+			android:id="@+id/TVCopyright" 
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content" 
+			android:layout_marginTop="5dip"
+			android:text="Copyright(c) 2012. Fletamuto, Inc." 
+			android:textSize="@dimen/large_text_size">
+		</TextView>
+
+		
+
+	</LinearLayout>
+	
+</LinearLayout>

@@ -1,0 +1,472 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Photo Desk</string>
+    <string name="version_name">Gallery 1.0</string>
+    <string name="update_date">2012-08-30</string>
+    <string name="default_file_name">PhotoDesk</string>
+    <string name="voice_min_length">0:00</string>
+    <string name="voice_max_length">30:00</string>
+    <string name="delete">Delete</string>
+    <string name="share">Share</string>
+    <string name="do_share">Share</string>
+    <string name="rotate">Rotate</string>
+    <string name="rotate_left">Rotate left</string>
+    <string name="rotate_right">Rotate right</string>
+    <string name="edit">Edit</string>
+    <string name="set_as">Set as</string>
+    <string name="move">Move</string>
+    <string name="copy">Copy</string>
+    <string name="protect">Protect</string>
+    <string name="details">Details</string>
+    <string name="slideshow">Slide show</string>
+    <string name="view">View</string>
+    <string name="grid">Grid</string>
+    <string name="slide">Slide</string>
+    <string name="map">Map</string>
+    <string name="camera">Camera</string>
+    <string name="security">Security</string>
+    <string name="signature">Signature</string>
+    <string name="sort">Sort</string>
+    <string name="by_name_ascend">By name ascending</string>
+    <string name="by_name_descend">By name descending</string>
+    <string name="by_date_ascend">By date ascending</string>
+    <string name="by_date_descend">By date descending</string>
+    <string name="full_unprotect">Full unprotect</string>
+    <string name="settings">Settings</string>
+    <string name="merge_folders">Merge folders</string>
+    <string name="rename">Rename</string>
+    <string name="unprotect">Unprotect</string>
+    <string name="signature_registration">Signature registration</string>
+    <string name="signature_re_registration">Signature Re-registration</string>
+    <string name="signature_verification">Signature verification</string>
+    <string name="signature_start_check_title">[Check signature]</string>
+    <string name="signature_start_check_sub_title">Check whether the registered signature exists</string>
+    <string name="signature_start_check_success">Registered signature exists</string>
+    <string name="signature_start_check_failure">No registered signature</string>
+    <string name="signature_start_registration_title">[Registration]</string>
+    <string name="signature_start_registration_sub_title">Start verification - Signature must be registered</string>
+    <string name="signature_start_verification_title">Verification</string>
+    <string name="signature_start_verification_sub_title">Start verification - Signature must be registered</string>
+    <string name="signature_start_verification_failure">There is no registered signature</string>
+    <string name="signature_start_delete_title">[Delete signature]</string>
+    <string name="signature_start_delete_sub_title">Delete the registered signature</string>
+    <string name="signature_start_delete_failure">Registered signature is deleted</string>
+    <string name="signature_start_delete_success">There is no registered signature</string>
+    <string name="signature_registration_registration_title">Registration</string>
+    <string name="signature_registration_registration_sub_title">Save your signature for registration</string>
+    <string name="signature_registration_registration_success_1">The first signature has been stored</string>
+    <string name="signature_registration_registration_success_2">The Second signature has been stored</string>
+    <string name="signature_registration_registration_success_3">Signature registration is complete</string>
+    <string name="signature_registration_registration_failure">This signature is invalid for registration.\nPlease try again!</string>
+    <string name="signature_registration_draw">Draw your signature to register</string>
+    <string name="signature_verification_verification_title">Verification</string>
+    <string name="signature_verification_verification_sub_title">Verify the signature</string>
+    <string name="signature_verification_verification_success">Registration succeeded</string>
+    <string name="signature_verification_verification_failure">Registration failed</string>
+    <string name="signature_verification_level_title">[Verification Level]</string>
+    <string name="signature_verification_level_sub_title">Select the verification level</string>
+    <string name="signature_verification_level_low">Low</string>
+    <string name="signature_verification_level_medium">Medium</string>
+    <string name="signature_verification_level_high">High</string>
+    <string name="signature_verification_level_confirm">Confirm</string>
+    <string name="signature_verification_level_cancel">Cancel</string>
+    <string name="signature_verification_draw">Draw your signature to verify</string>
+    <string name="signature_retry_title">Retry</string>
+    <string name="signature_retry_sub_title">Clear the screen to redraw signature</string>
+    <string name="signature_input_password_title">Password</string>
+    <string name="signature_input_password_sub_title">Input your password on behalf of signature</string>
+    <string name="signature_input_password">Create a password</string>
+    <string name="signature_input_password_again">Confirm your password</string>
+    <string name="signature_password_registration_desc">Password registration is required in case you forget your signature</string>
+    <string name="signature_password_registration">Password registration</string>
+    <string name="password_too_short">Password is too short</string>
+    <string name="passwords_dont_match">"The password do not match. -Please try again"</string>
+    <string name="please_input_password">"Please input your password"</string>
+    <string name="password_is_not_exist">Not registered password</string>
+    <string name="password_verification_sucess">Password verification has been successful</string>
+    <string name="password_verification_failture">Password verification has been failed</string>
+    <string name="password_registration_sucess">Password registration has been successful</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="folder_name">"Folder Name"</string>
+    <string name="number_of_images">Images</string>
+    <string name="number_of_video">Videos</string>
+    <string name="folder_creation_failture">"Folder creation failed"</string>
+    <string name="folder_list">Folder List</string>
+    <string name="new_folder">New folder</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="copy_qustion">Do you want to copy to the selected folder?</string>
+    <string name="move_qustion">Do you want to move to the selected folder?</string>
+    <string name="folder_delete">Delete the folder</string>
+    <string name="btn_image_edit">edit</string>
+
+    <plurals name="delete_selected_folders">
+        <item quantity="one">Delete selected folder? \nAll images will be deleted with the seleted folder</item>
+        <item quantity="other">Delete selected folders? \nAll images will be deleted with the selected folders</item>
+    </plurals>
+    <plurals name="delete_selection">
+        <item quantity="one">Delete selected item?</item>
+        <item quantity="other">Delete selected items?</item>
+    </plurals>
+    <plurals name="delete_selection_items">
+        <item quantity="one">" item"</item>
+        <item quantity="other">" items"</item>
+    </plurals>
+
+    <string name="protected_files_cannot_be_deleted">"- Protected files can not be deleted"</string>
+    <string name="merge_into_the_selected_folder">Merge into the selected folder</string>
+    <string name="please_enter_a_name">"Please enter a name"</string>
+    <string name="the_same_file_already_exist">"The same file already exist"</string>
+    <string name="the_same_folder_already_exist">"The same folder already exist"</string>
+    <string name="warning">"Warning"</string>
+    <string name="delete_q">"Delete?"</string>
+    <string name="save">Save</string>
+    <string name="save_type">"Save type"</string>
+    <string name="save_sucess_filename_is">"Has been saved. \nPath : '"</string>
+    <string name="select">select</string>
+    <string name="music">music</string>
+    <string name="basic_information">Basic Information</string>
+    <string name="title">Title</string>
+    <string name="description">Description</string>
+    <string name="time">Time</string>
+    <string name="location">Location</string>
+    <string name="path">Path</string>
+    <string name="width">Width</string>
+    <string name="height">Height</string>
+    <string name="orientation">Orientation</string>
+    <string name="duration">Duration</string>
+    <string name="mimetype">MIME type</string>
+    <string name="file_size">File size</string>
+    <string name="maker">Manufacturer</string>
+    <string name="model">Model</string>
+    <string name="flash">Flash</string>
+    <string name="aperture">Aperture</string>
+    <string name="focal_length">Focal Length</string>
+    <string name="white_balance">White balance</string>
+    <string name="exposure_time">Exposure time</string>
+    <string name="iso">ISO</string>
+    <string name="unit_mm">mm</string>
+    <string name="manual">Manual</string>
+    <string name="auto">Auto</string>
+    <string name="flash_on">Flash on</string>
+    <string name="flash_off">Flash off</string>
+    <string name="details_title">%1$d of %2$d items:</string>
+    <string name="close">Close</string>
+    <string name="slide_show_err">You need more than one picture to have a slideshow</string>
+    <string name="slide_show_start">Start Slide Show</string>
+    <string name="slide_show_end">Terminate Slide Show</string>
+    <string name="thumbnail_remove">"Thumbnail remove"</string>
+    <string name="thumbnail_cache_remove_question">"Are you sure you want to remove the thumbnail cache?"</string>
+    <string name="thumbnail_cache_remove_cancel">"Cancel"</string>
+    <string name="thumbnail_cache_remove_confirm">"Confirm"</string>
+    <string name="program_info_photodesk_gallery">"Photo Desk"</string>
+    <string name="program_info_version_info">"Version info"</string>
+    <string name="program_info_update_date">"Update date"</string>
+    <string name="deselect_all">"Unselect all"</string>
+    <string name="select_all">"Select all"</string>
+    <string name="not_exist">"empty"</string>
+    <string name="question_exit">"Do you want to quit?"</string>
+        
+    <string name="editor_option_samm">"SAMM Option"</string>
+    <string name="editor_option_animation">"Animation Option"</string>
+    <string name="editor_option_image_operation">"Image Operation For Eraser Animation"</string>
+    
+    <string name="samm_img_size_prefkey">"samm_save_image_size"</string>
+    <string name="samm_img_size_title">"Save Image Size"</string>
+    <string name="samm_img_size_summary">"Select Save Image Size"</string>
+    <string name="samm_img_size_dialogtitle">"Select Save Size"</string>
+    
+    <string name="samm_img_quality_prefkey">"samm_save_image_quality"</string>
+    <string name="samm_img_quality_title">"Save Image Quality"</string>
+    <string name="samm_img_quality_summary">"Select Save Image Quality"</string>
+    <string name="samm_img_quality_dialogtitle">"Select Image Quality"</string>
+    
+    <string name="samm_animation_speed_prefkey">"samm_animation_speed"</string>
+    <string name="samm_animation_speed_title">"Speed of the Animation"</string>
+    <string name="samm_animation_speed_summary">"Select Speed of the Animation"</string>
+    <string name="samm_animation_speed_dialogtitle">"Select Animation Speed"</string>
+    
+    <string name="samm_bg_audio_play_prefkey">"background_audio_play"</string>
+    <string name="samm_bg_audio_play_title">"Background Audio Play"</string>
+    <string name="samm_bg_audio_play_summary_on">"ON - Turn on the Background audio"</string>
+    <string name="samm_bg_audio_play_summary_off">"OFF - Turn off the Background audio"</string>
+    
+    <string name="samm_bg_audio_replay_prefkey">"background_audio_auto_replay"</string>
+    <string name="samm_bg_audio_replay_title">"Background Audio Auto Replay(Repeat)"</string>
+    <string name="samm_bg_audio_replay_summary_on">"ON - Repeat Background audio"</string>
+    <string name="samm_bg_audio_replay_summary_off">"OFF - Play background audio once"</string>
+    
+    
+    <string name="samm_bg_audio_stop_prefkey">"background_audio_play_stop"</string>
+    <string name="samm_bg_audio_stop_title">"Background Audio Stop"</string>
+    <string name="samm_bg_audio_stop_summary_on">"OFF - Play Background audio regardless of animation"</string>
+    <string name="samm_bg_audio_stop_summary_off">"ON - Stop background audio when animation stop"</string>
+    
+    <string name="samm_bg_audio_sound_effect_prefkey">"play_animation_using_sound_effect"</string>
+    <string name="samm_bg_audio_sound_effect_title">"Play Animation Using Sound Effect"</string>
+    <string name="samm_bg_audio_sound_effect_summary_on">"ON - Play animation with sound effect"</string>
+    <string name="samm_bg_audio_sound_effect_summary_off">"OFF - Do not use sound effect on Animation"</string>
+
+    <string name="editor_image_loading_title">"Loading the editor data"</string>
+    <string name="animation_loading_title">"Loading the animation data"</string>
+    <string name="editor_image_loading_msg">"Loading..."</string>
+    <string name="editor_quest_reset_drawing_data">"Do you want to reset all the drawings?"</string>
+    
+
+	
+	<string name="warring_merge_title">"merge folders : "</string>
+	<string name="warring_merge_msg">"Do you want to merge this folder with the other one? \n The other one will be deleted when merged"</string>
+	<string name="warring_merge_overlap_msg">"All the imagies with the same name will not be merged"</string>
+    
+	<string name="clipart_title">"Select clipart"</string>
+	<string name="filtering_title">"Applying filter"</string>
+	<string name="filtering_ing">"Applying it..."</string>
+	<string name="protection_status_change">"Status Changing. Please wait..."</string>
+	<string name="update_db_status">"Update DB Status. Please wait..."</string>
+
+	<string name="setting_main_option">"Setting Option"</string>
+	
+	<string name="type_change_prefkey">"theme_change"</string>
+    <string name="type_change_title">"Theme Change"</string>
+    <string name="type_change_summary">"Theme Changing"</string>
+    <string name="type_change_dialogtitle">"Select Theme"</string>
+    
+ 	<string name="cache_delete_prefkey">"cache_delete"</string>
+    <string name="cache_delete_title">"Cache Delete"</string>
+    <string name="cache_delete_summary">"Thumbnail Image Deleted"</string>
+    <string name="cache_delete_dialogtitle">"Cache Delete"</string>
+
+    <string name="help_info_prefkey">"help_info"</string>
+    <string name="help_info_title">"Help"</string>
+    <string name="help_info_summary">"Functional Description"</string>
+    <string name="help_info_dialogtitle">"Help"</string>
+
+    <string name="program_info_prefkey">"program_info"</string>
+    <string name="program_info_title">"Program Info"</string>
+    <string name="program_info_summary">"Check Program Info"</string>
+    <string name="program_info_dialogtitle">"Program Info"</string>
+    <string name="theme_changed">"Theme Changed"</string> 
+   
+    <string name="menu_gallery_use">"Menu used for menu gallery"</string>
+    <string name="content_image_view">"Function to view content image"</string>
+    <string name="camera_use">"Function to use camera"</string>
+    <string name="sort_icon">"Function to sort out content images"</string>
+    <string name="duplicate_photo_del">"Function to discard same images"</string>
+    <string name="hide_image_folder_view">"Function to hide or view hidden folders and images"</string>
+    <string name="protect_release">"Function to unprotect all the protected folders and images"</string>
+    <string name="sign_setting">"Function to register signature for security"</string>
+    <string name="setting_icon">"Function to setting"</string>
+    <string name="menu_explain_0">"Sorting function by names and dates"</string>
+    <string name="menu_explain_1">"When images are protected they cannot be discarded. A signature must be registrated first in order to use the protect menu"</string>
+    <string name="menu_explain_2">"It can be changed into basic, stitch, or mint-check theme by the theme changing"</string>
+    <string name="menu_explain_3">"Loaded thumbnail images will be removed by the cache deletion"</string>
+        
+    
+    <string name="folder_menu_use">"Menu for moving folders"</string>
+    <string name="folder_add">"Add a folder"</string>
+    <string name="folder_different_view">"Change folder view"</string>
+    <string name="share_fnuc">"Share"</string>
+    <string name="folder_del">"Delete folder"</string>
+    <string name="folder_protect_ubprotect">"Protect/unprotect folder"</string>
+    <string name="folder_name_change">"Change folder name"</string>
+    <string name="folder_merge">"Merge folders"</string>
+    <string name="folder_Launcher_direct">"Launcher Short-cut"</string>
+    <string name="folder_menu_explain_dot">"· "</string>
+    <string name="folder_menu_explain">"Merging folders combines two or more folders into one. While merging, images in the folders, will be either renamed or replaced"</string>
+    
+    <string name="content_menu_use">"Menu used for content"</string>
+    <string name="content_del">"Function to delete content"</string>
+    <string name="content_share">"Function to share"</string>
+    <string name="content_rotate">"Function to rotate content"</string>
+    <string name="content_edit">"Function to change the name of content and add location Info"</string>
+    <string name="content_image_setting">"Function to set content image"</string>
+    <string name="content_move">"Function to move pictures"</string>
+    <string name="content_copy">"Function to copy pictures"</string>
+    <string name="content_protect_ubprotect">"Function to protect or unprotect pictures"</string>
+    <string name="content_new_folder_add">"Function to create a new folder"</string>
+    <string name="content_slide_icon">"Function to slide content"</string>
+    <string name="content_detail_infomation">"Function to view Info"</string>
+    <string name="content_menu_explain">"You can move images to a different folder the original image will not remain in the old folder, but will be transferred to the new one You can copy images to a different folder The original image will remain in the old folder but also will be transferred to the new one A new folder can be related with no less than 2 pictures"</string>
+        
+    <string name="gallery_menu_explain">"These are the menu for Gallery You can move images into a folder by using drag and drop"</string>
+    <string name="gallery_menu_explain_1">"Function to use pen"</string>
+    <string name="gallery_menu_explain_2">"There are various functions in case the hover and the side-key are used by pen"</string>
+    <string name="gallery_menu_explain_3">"Info of folder will be shown by hovering folder area The image of folder will be changed by using a side key Also view of folder will be changed by using a side key at the  outside of folder area"</string>
+    <string name="gallery_menu_explain_4">"Basic information of picture will be shown by hovering on the picture's field and the short cut menu for the picture will be shown once a side-key is used"</string>
+    <string name="gallery_menu_explain_5">"Basic information of video will be shown by hovering video and shortcut for video will be shown by using a side key"</string>
+   
+    
+    <string name="editer_menu_use">"Menu for editor"</string>
+    <string name="editer_album">"Funtion to go to gallery"</string>
+    <string name="editer_initialization">"Funtion to reset the edited pictures"</string>
+    <string name="editer_save">"Function to store edited pictures"</string>
+    <string name="editer_redo">"Redo"</string>
+    <string name="editer_undo">"Undo"</string>
+    <string name="editer_setting">"Function to setting for editor"</string>
+      
+    <string name="toolbar_menu_use">"Menu for toolbar"</string>
+    <string name="toolbar_pen">"Type, size, color of pen can be changed"</string>
+    <string name="toolbar_eraser">"Size of eraser can be changed"</string>
+    <string name="toolbar_text">"Size, color, font of text can be changed"</string>
+    <string name="toolbar_flter">"Changing filter is available"</string>
+    <string name="toolbar_stamp">"Stamp can be added"</string>
+    <string name="toolbar_music">"Music can be added"</string>
+    <string name="toolbar_voice">"Voice can be added"</string>
+    <string name="toolbar_animation">"The process of editing will be played"</string>
+        
+    
+    <string name="gallery_menu_explain_10">"Screen enlarge/ reducing"</string>
+    <string name="gallery_menu_explain_11">"Pinch motion is made by touching the screen with both thumb and a finger, and moving the in opposite directions"</string>
+    <string name="gallery_menu_explain_12">"Enlarge / reduction in size can be made using Pinch motion"</string>
+    <string name="gallery_menu_explain_13">"Pen and touch will be operated simultaneously on the edit's canvas"</string>
+    <string name="gallery_menu_explain_14">"Pen works as a pen, touch works as the eraser"</string>
+    <string name="gallery_menu_explain_15">"Pen (simultaneous operation of pen and touch), eraser, text, adding Images (pen and touch together) functions will be operated with the touch motion"</string>
+    <string name="gallery_menu_explain_16">"Pen setting menu will be shown when hover and side-key are used on the canvas of edit"</string>
+    <string name="gallery_pen">"Pen"</string>
+    <string name="gallery_touch">"Touch"</string>
+    <string name="gallery_pen_touch">"Pen and Touch"</string>
+    
+    
+    <string name="delete_contents">"Delete Contents"</string>
+    <string name="removing">"Removing"</string>
+    <string name="merger_folder">"Merged Folder"</string>
+    <string name="doing">"Busy"</string>
+    <string name="fail_make_folder">"Creating a folder failed"</string>
+    <string name="not_sdcard">"SD card is empty"</string>
+    <string name="map_not_image">"No images with GPS Info"</string>
+    <string name="setting_gps">"GPS is not set up. Do you want to set GPS?"</string>
+    <string name="setting">"Setting"</string>
+    <string name="not_provider_gps">"No GPS provider!!"</string>
+    
+    <string name="remove_chash_image">"Preview image stored is deleted"</string>
+    <string name="theme">"Theme"</string>
+    <string name="change_theme">"Change Theme?"</string>
+
+    <string name="warning_one_overlap">"Same images exist\n"</string>
+    <string name="warning_overlap_image_name">"Same images : %s"</string>
+    <string name="warning_many_overlap">"Same images exist\n"</string>
+    <string name="warning_overlap_image_count">"Same images count : %d"</string>
+    
+    <string name="record">"Record"</string>
+    <string name="stop">"Stop"</string>
+    <string name="play">"Play"</string>
+    <string name="filter_title">"Filter effects"</string>
+    
+    <string name="map_image_count">"%d Images"</string>
+    <string name="add_selected_title">"Select Images"</string>
+    <string name="crack_image">"Can not load image"</string>
+    
+    <string name="warring_special_str">"There is a special character in the name\n please try again"</string>
+    <string name="image_editor">Image Editor</string>
+    
+    
+    <!-- ==================================== 여기까지 번역 완료입니다. 더 번역 할 작업은 이 밑에다가 해주세요.================================================================= -->
+    <!-- ==================================== 여기까지 번역 완료입니다. 더 번역 할 작업은 이 밑에다가 해주세요.================================================================= -->
+    <!-- ==================================== 여기까지 번역 완료입니다. 더 번역 할 작업은 이 밑에다가 해주세요.================================================================= -->
+    <!-- ==================================== 여기까지 번역 완료입니다. 더 번역 할 작업은 이 밑에다가 해주세요.================================================================= -->
+    <!-- ==================================== 여기까지 번역 완료입니다. 더 번역 할 작업은 이 밑에다가 해주세요.================================================================= -->
+    <!-- ==================================== 여기까지 번역 완료입니다. 더 번역 할 작업은 이 밑에다가 해주세요.================================================================= -->
+    <!-- ==================================== 여기까지 번역 완료입니다. 더 번역 할 작업은 이 밑에다가 해주세요.================================================================= -->
+    <!-- ==================================== 여기까지 번역 완료입니다. 더 번역 할 작업은 이 밑에다가 해주세요.================================================================= -->
+    <!-- ==================================== 여기까지 번역 완료입니다. 더 번역 할 작업은 이 밑에다가 해주세요.================================================================= -->
+    <!-- ==================================== 여기까지 번역 완료입니다. 더 번역 할 작업은 이 밑에다가 해주세요.================================================================= -->
+    <!-- ==================================== 여기까지 번역 완료입니다. 더 번역 할 작업은 이 밑에다가 해주세요.================================================================= -->
+    <!-- ==================================== 여기까지 번역 완료입니다. 더 번역 할 작업은 이 밑에다가 해주세요.================================================================= -->
+    <!-- ==================================== 여기까지 번역 완료입니다. 더 번역 할 작업은 이 밑에다가 해주세요.================================================================= -->
+    
+    <string name="copying">copying...</string>
+    <string name="moving">moving...</string>
+    <string name="adding">adding...</string>
+    <string name="link_to_homescreen">"link to HomeScreen"</string>
+
+    <string name="hidden_Folder">Folder Hide</string>
+    <string name="show_hidden_folder">Showing the hidden folder</string>
+    <string name="hidden_Folder_unhide">Unhide the hidden folder</string>
+    <string name="hidden_Folder_status">Hiding folder…Please wait!</string>
+    <string name="hidden_Folder_unhide_fail">Unable to unhide a folder of path! \n Will you delete it from the list?</string>
+    <string name="hidden_Folder_warning_message">"Do you want to hide the selected folder? \n This action adds . to selected folder's name and hides it. \n A hidden folder may not be found from another application program. You can find it once you've set it to unhide from explorer."</string> 
+	<string name="folder_hide_success">Successfully hide folder</string>
+    <string name="folder_hide_fail">Failed to hide folder</string>
+    <string name="cannot_hide_root_path">Cannot hide the path of root</string>
+    <string name="cannot_insert_to_db">Cannot save to DB</string>
+    <string name="cannot_make_to_thumbnail">Cannot make thumbnail image</string>
+    <string name="delete_complete">Deletion completed</string>
+    <string name="folders_unhide_success">Successfully unhide folder</string>
+    <string name="folders_unhide_success_after_warning_message">\n The largest sized folder needs more loading time.</string>
+    
+    <string name="move_image_editor">Do you want to move to image editor?</string>
+
+    <string name="empty_sdcard_image">There are no pictures on the SD card</string>
+    <string name="processing_rename_folder">Folder will be displayed after processing</string>
+    
+    <string name="location_edit">Changing location</string>
+    <string name="location_qustion">Do you want to locate %d of pictures in here?</string> 
+    <string name="location_change">Changing location …</string>  
+    
+    <string name="includevideo_info_title">"Include Videos"</string>
+    
+    <string name="samm_setting_category">SAMM Setting</string>
+    <string name="ani_setting_category">Animation Setting</string>
+
+
+    <string name="map_location_change">Location change is able to change the location info of pictures and video clips. Select the pictures or video clips and click the location changes menu and then press and hold a location from the map. You can confirm the location changes after designating the location and running the map menu.</string>
+    <string name="myalbum_menu_use">My Album menu</string>
+
+    <string name="make_myalbum">Function for moving to My Album</string>
+	<string name="make_newalbum">Function for creating a new album</string>
+	<string name="move_albumlist">Function for moving to the album list</string>
+	<string name="select_frame">Fuction for selecting a frame</string>
+	<string name="select_background">Fuction for selecting background image of album</string>
+    <string name="next_page">Fuction for making next page</string>
+    <string name="myalbum_explain">My Album enables you to make an album with pictures and video clips stored in your phone and decorate it like a real album. Plus you can check My Album, that album you built from album list. </string>
+    <string name="folder_hide">Function for hiding a folder</string>
+	<string name="folder_hide_explain">Hiding folder enables you set the folder to hide or unhide through signature registration and authentication. You can check the hidden folder by running the hidden folder view.</string>
+	
+	<string name="Detaching_pen_explain">Pen pull-out action enables you to go the editing page of the applicable, while still viewing the image.</string>
+	<string name="pen_gesture_explain">Pen gesture enables you to turn an image in a circular direction. If you draw a half circle on the viewer, the image rotates 90 degrees.</string>
+	<string name="pen_sidekey_explain">"You can use a designated tools function by pressing pen's side key and selecting one of the tools from the image editor's toolbox."</string>
+	
+	<string name="pen_setting">Pen Setting</string>
+	<string name="eraser_setting">Eraser Setting</string>
+	<string name="text_setting">Text Setting</string>
+	<string name="clear_all">Delete all</string>
+	
+	<string name="text_settings_tab_font">Font</string>
+    <string name="text_settings_tab_paragraph">Paragraph</string>
+    <string name="text_settings_tab_paragraph_align">Align</string>
+    <string name="textbox_hint">Insert Text</string>
+    
+    <string name="page_add">Add a page</string>
+    <string name="creating_album_page">Creating an album page...</string>
+    <string name="image_save_fail">Failed the image saving.</string>
+    <string name="creating_album">Saving album</string>
+    
+    
+    
+     <string name="myalbum_newalbum">Creating new album</string>
+    <string name="myalbum_list">Album list</string>
+    <string name="my_album">My Album</string>
+    <string name="myalbum_name">Name of Album</string>
+    <string name="myalbum_color">Color of Album</string>
+    <string name="warring_same_title_name">An album with the same name already exists. \n Enter a new name!</string>
+    <string name="myalbum_enter_album_name">Enter an album name!</string>
+    
+    <string name="myalbum_music_change">Change music</string>
+    <string name="myalbum_select_frame">Select a frame</string>
+    <string name="myalbum_select_backgroundimage">Select a background image</string>
+    <string name="myalbum_complete">Completed</string>
+    <string name="myalbum_album_complete">Album complete</string>
+    <string name="myalbum_page_add">Add a page</string>
+    <string name="myalbum_album_add">Add an album</string>
+    
+    
+    <string name="rotation_warning1">Unable to rotate due to protection setting of selected file or folder!</string>
+    <string name="rotation_warning2">Unable to rotate this file format!</string>
+    
+    <string name="not_support_this_feature">This handset does not support this feature.</string>
+    <string name="myalbum_question_exit">Do you want to exit MyAblum?</string>
+	<string name="editor_question_exit">"Do you want to quit Image Editor?"</string>
+	<string name="location_edit_title">"Press and hold the map"</string>
+</resources>

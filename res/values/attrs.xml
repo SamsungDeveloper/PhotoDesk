@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Copyright (C) 2011 The Android Open Source Project
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+ -->
+<resources>
+    <declare-styleable name="AppTheme">
+<!-- Base Theme start -->
+		<attr name="baseSelector" format="reference" />
+		<attr name="defaultTextColor" format="color" />
+<!-- Base Theme end -->
+<!-- folderView Theme start -->
+    	<attr name="folderViewFolderOptionBtnBG" format="reference" />
+    	<attr name="folderViewFolderOptionDivider" format="reference" />
+    	<attr name="folderViewFolderOptionBtnAdd" format="reference" />
+    	<attr name="folderViewFolderOptionBtnView" format="reference" />
+    	<attr name="folderViewBG" format="reference|color" />
+    	<attr name="folderViewSelectCheckBox" format="reference" />
+    	<attr name="folderViewSelectShadow" format="reference" />
+    	<attr name="folderViewShadow" format="reference" />
+    	<attr name="folderViewBtnClose" format="reference" />
+    	<attr name="folderViewListDivider" format="reference" />
+    	<attr name="folderViewLargeGridLine" format="reference" />
+    	<attr name="folderViewBaseText" format="reference" />
+<!-- folderView Theme end -->
+
+<!-- Content View Theme start -->
+    	<attr name="contentViewSelectFrame" format="color" />
+    	<attr name="contentViewFrame" format="color" />
+    	<attr name="contentViewBG" format="reference|color" />
+		<attr name="contentViewImageCheckBox" format="reference" />
+    	<attr name="contentViewLeftLength" format="reference" />
+    	<attr name="contentViewLeftLengthShadow" format="reference|color" />
+    	<attr name="contentViewBtnOpen" format="reference" />
+    	<attr name="contentViewScrollBar" format="reference" />
+    	<attr name="contentViewImageShadow" format="reference" />
+<!-- Content View Theme end -->
+
+<!-- ActionBar Theme Icon start -->
+		<attr name="actionBarBG" format="reference" />
+		<attr name="actionBarShadow" format="reference" />
+    	<attr name="actionBarBtnAllSelect" format="reference" />
+		<attr name="actionBarIconAlbum" format="reference" />
+		<attr name="actionBarIconCamera" format="reference" />
+		<attr name="actionBarIconCollection" format="reference" />
+		<attr name="actionBarIconCopy" format="reference" />
+		<attr name="actionBarIconDel" format="reference" />
+		<attr name="actionBarIconEdit" format="reference" />
+		<attr name="actionBarIconFolderAdd" format="reference" />
+		<attr name="actionBarIconProtect" format="reference" />
+		<attr name="actionBarIconMore" format="reference" />
+		<attr name="actionBarIconMove" format="reference" />
+		<attr name="actionBarIconName" format="reference" />
+		<attr name="actionBarIconRedo" format="reference" />
+		<attr name="actionBarIconRotate" format="reference" />
+		<attr name="actionBarIconSave" format="reference" />
+		<attr name="actionBarIconSetting" format="reference" />
+		<attr name="actionBarIconShare" format="reference" />
+		<attr name="actionBarIconSlideShow" format="reference" />
+		<attr name="actionBarIconSort" format="reference" />
+		<attr name="actionBarIconUndo" format="reference" />
+    	<attr name="actionBarIconNewFolder" format="reference" />
+    	<attr name="actionBarIconSetAs" format="reference" />
+    	<attr name="actionBarIconShortCut" format="reference" />
+    	<attr name="actionBarIconHiddenFolder" format="reference" />
+    	<attr name="actionBarIconhiddenFolderUnHide" format="reference" />
+    	
+    	<attr name="actionBarIconBackground" format="reference" />
+    	<attr name="actionBarIconFrame" format="reference" />
+    	<attr name="actionBarIconLayout" format="reference" />
+    	<attr name="actionBarIconMyalbum" format="reference" />
+    	<attr name="actionBarIconPageplus" format="reference" />
+    	<attr name="actionBarIconMusic" format="reference" />
+    	<attr name="actionBarIconComplete" format="reference" />
+    	
+    	
+<!-- ActionBar Theme Icon end -->
+
+<!-- ImageDetail Theme start -->
+		<attr name="imageDetailActionBar" format="reference" />
+<!-- ImageDetail Theme end -->		
+
+<!-- ImageEditor Theme start -->
+		<attr name="editToolsLayerBG" format="reference" />
+		<attr name="editToolsLayerStroke" format="reference"/>
+		<attr name="editIconAnimaPlay" format="reference" />
+		<attr name="editIconAnima" format="reference" />
+		<attr name="editIconImagePlus" format="reference" />
+		<attr name="editIconFilter" format="reference" />
+		<attr name="editIconMusic" format="reference" />
+		<attr name="editIconVoicePlay" format="reference" />
+		<attr name="editIconVoice" format="reference" />
+		<attr name="editIconVoiceing" format="reference" />
+		<attr name="editIconAddPicOnBoth" format="reference" />
+		<attr name="editIconAddPicOnHand" format="reference" />
+		<attr name="editIconAddPicOnPen" format="reference" />
+		<attr name="editIconAddPicOn" format="reference" />
+		<attr name="editIconAddPic" format="reference" />
+		<attr name="editIconEraserOnBoth" format="reference" />
+		<attr name="editIconEraserOnHand" format="reference" />
+		<attr name="editIconEraserOnPen" format="reference" />
+		<attr name="editIconEraserOn" format="reference" />
+		<attr name="editIconEraser" format="reference" />
+		<attr name="editIconPenOnBoth" format="reference" />
+		<attr name="editIconPenOnHand" format="reference" />
+		<attr name="editIconPenOnPen" format="reference" />
+		<attr name="editIconPenOn" format="reference" />
+		<attr name="editIconPen" format="reference" />
+		<attr name="editIconTextOnBoth" format="reference" />
+		<attr name="editIconTextOnHand" format="reference" />
+		<attr name="editIconTextOnPen" format="reference" />
+		<attr name="editIconTextOn" format="reference" />
+		<attr name="editIconText" format="reference" />
+		<attr name="editIconTopBarOpenArrow" format="reference" />
+		<attr name="editIconTopBarCloseArrow" format="reference" />
+		
+		<attr name="itemNoneCheckBox" format="reference" />
+		<attr name="editorSettingTitleTextColor" format="color" />
+		<attr name="editorSettingDescriptionTextColor" format="color" />
+		
+<!-- ImageEditor Theme end -->
+<!-- Help info Text start -->
+    	<attr name="helpInfoTextColor" format="color" />  
+<!-- Help info Text start -->
+<!-- Setting Theme start -->
+		<attr name="settingLine" format="reference" />
+		<attr name="settingAboutTextColor" format="color" />
+		<attr name="themePopUpRadioBtn" format="reference" />
+<!-- Setting Theme end -->   	
+
+<!-- gestureoverlay -->
+        <attr name="gestureOverlayViewStyle" format="reference" />
+
+    </declare-styleable>
+    
+    <declare-styleable name="CustomDialog">
+        <attr name="btnPopBg" format="reference" />
+        <attr name="popupBg" format="reference" />
+        <attr name="popPasswordIcon" format="reference" />
+        <attr name="popupTopbarBg" format="reference" />
+        <attr name="popupListLine" format="reference" />
+    </declare-styleable>
+    
+    <declare-styleable name="CustomAttribute">
+        <attr name="type" format="integer" />
+    </declare-styleable>
+</resources>

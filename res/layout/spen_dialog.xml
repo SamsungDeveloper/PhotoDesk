@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lLSdialog"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="?attr/popupBg"
+
+    android:minHeight="@dimen/dialog_height"
+    android:minWidth="@dimen/dialog_width"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/dialog_padding_left"
+    android:paddingTop="@dimen/dialog_padding_top"
+    android:paddingRight="@dimen/dialog_padding_right"
+    android:paddingBottom="@dimen/dialog_padding_bottom" >
+
+    <LinearLayout
+        android:id="@+id/lLTitleBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/popupTopbarBg"
+        android:minHeight="@dimen/dialog_topbar_height"
+        android:paddingLeft="@dimen/dialog_topbar_padding_left"
+        android:paddingRight="@dimen/dialog_topbar_padding_right"
+        android:gravity="center_vertical"
+        android:visibility="gone" >
+
+        <ImageView
+            android:id="@+id/ivIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="title"
+            android:textColor="#ffffffff"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:maxWidth="@dimen/dialog_width"
+            android:textSize="@dimen/dialog_title_text_size" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lLSummary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:minHeight="@dimen/dialog_summary_height" >
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lLBtnGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:gravity="top|center_horizontal"
+        android:minHeight="@dimen/dialog_btn_group_height"
+        android:paddingLeft="@dimen/dialog_btn_group_padding_left"
+        android:paddingRight="@dimen/dialog_btn_group_padding_right"
+        android:visibility="gone" >
+
+        <Button
+            android:id="@+id/btnLeft"
+            android:layout_width="0dip"
+            android:layout_height="@dimen/dialog_btn_height"
+            android:layout_weight="1"
+            android:background="?attr/btnPopBg"
+            android:text="leftButton"
+            android:textColor="#ffffffff"
+            android:textSize="@dimen/large_text_size"
+        	android:visibility="gone" />
+
+        <Button
+            android:id="@+id/btnRight"
+            android:layout_width="0dip"
+            android:layout_height="@dimen/dialog_btn_height"
+            android:layout_weight="1"
+            android:background="?attr/btnPopBg"
+            android:text="rightButton"
+            android:textColor="#ffffffff"
+            android:textSize="@dimen/large_text_size"
+            android:layout_marginLeft="@dimen/dialog_btn_gap"
+        	android:visibility="gone" />
+    </LinearLayout>
+
+</LinearLayout>

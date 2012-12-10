@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/edit_menu_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+ 		<com.samsung.photodesk.editor.EditorTopBar
+            android:id="@+id/top_bar"
+		    android:layout_width="match_parent"
+		    android:layout_height="?android:attr/actionBarSize"
+		    android:layout_gravity="center"
+		    android:background="?attr/actionBarBG"
+		    android:paddingBottom="5dip"
+		    android:paddingTop="5dip"/>
+ 		
+        <com.samsung.photodesk.editor.EditorDrawingMenuBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/folderViewBG" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/edit_menu_bar"
+        android:layout_marginRight="@dimen/edit_draw_menu_layout_margin"
+        android:layout_marginTop="@dimen/edit_menu_open_btn_margin_top" >
+
+        <ImageButton
+            android:id="@+id/edit_menu_open_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/type1_edit_tools_layer_stroke"
+            android:src="@drawable/type1_edit_arrow_open_selector" >
+        </ImageButton>
+    </FrameLayout>
+
+</RelativeLayout>

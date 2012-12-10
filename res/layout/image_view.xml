@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/contentViewBG" >
+
+    <com.samsung.photodesk.view.CustomGestureOverlayView
+        android:id="@+id/gestures"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:eventsInterceptionEnabled="true"
+        android:gestureStrokeType="multiple"
+        android:orientation="horizontal" >
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vpImageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </com.samsung.photodesk.view.CustomGestureOverlayView>
+
+    <LinearLayout
+        android:id="@+id/lLImageEdit"
+        android:layout_width="@dimen/image_view_edit_btn_width"
+        android:layout_height="@dimen/image_view_edit_btn_height"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="@dimen/image_view_edit_btn_margin_right"
+        android:layout_marginTop="@dimen/image_view_edit_btn_margin_top"
+        android:background="@drawable/btn_image_edit_selector"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/image_view_edit_btn_padding_left"
+        android:paddingRight="@dimen/image_view_edit_btn_padding_right"
+        android:visibility="gone" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="0"
+            android:src="@drawable/btn_edit" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:paddingBottom="2dip"
+            android:text="@string/btn_image_edit"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/image_view_edit_btn_text_size" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iVProtect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/icon_protection"
+        android:visibility="gone" />
+
+</RelativeLayout>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<string-array name="forder_list">
+	 	<item>1.  </item>
+	 	<item>2.  </item>
+	 	<item>3.   </item>
+	 	<item>4.  </item>
+	 	<item>5.   </item>
+	 	<item>6.   </item>
+		<item>7. </item>
+	</string-array>
+	
+	<string-array name="image_editor_save_kinds">
+		<item>JPG Image</item>
+		<item>Animation Data</item>
+	</string-array>    
+    <string-array name="Sigature_array">
+        <item>[서명 등록]</item>
+        <item>[서명 재등록]</item>
+    </string-array>
+    <string-array name="signature_threshold">
+        <item>낮음</item>
+        <item>중간</item>
+        <item>높음</item>
+    </string-array>
+        <string-array name="password_array">
+        <item>[비밀번호 설정]</item>
+        <item>[비밀번호 변경]</item>
+    </string-array>
+  
+    <string-array name="setting_theme_typelist">
+        <item>Basic</item>
+        <item>Stitch</item>
+        <item>Mint-Check</item>
+    </string-array>
+    
+    <string-array name="setting_theme_typelist_value">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    
+    <string-array name="imageoperation_level">
+		<item>매우 작음</item>
+		<item>작음</item>
+		<item>중간</item>
+		<item>크게</item>
+		<item>매우 크게</item>
+	</string-array>
+	
+    <string-array name="save_image_size">
+        <item>오리지날</item>
+        <item>중간</item>
+        <item>콤팩트</item>
+    </string-array>
+    
+	<string-array name="save_image_size_value">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    
+	<string-array name="save_image_quality">
+        <item>최대</item>
+        <item>중간</item>
+        <item>최소</item>
+    </string-array>
+    
+	<string-array name="save_image_quality_value">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    
+	<string-array name="animation_speed">
+        <item>느림</item>
+        <item>보통</item>
+        <item>빠름</item>
+        <item>최대</item>
+        <item>자동</item>                
+    </string-array>
+    
+	<string-array name="animation_speed_value">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+    
+	<string-array name="filters_name">
+	    <item>오리지날</item>
+	    <item>자동</item>
+	    <item>흑백</item>
+	    <item>세피아</item>
+	    <item>민트</item>
+	    <item>반전</item>
+	    <item>밝게</item>
+	    <item>어둡게</item>
+	    <item>빈티지</item>
+	    <item>블러</item>
+	    <item>레트로</item>
+	    <item>목탄</item>
+	    <item>컬러 스케치</item>
+	    <item>햇살</item>
+	    <item>모자이크</item>
+	    <item>팝 아트</item>
+	    <item>매직펜</item>
+	    <item>유화</item>
+	    <item>카툰</item>
+	    <item>클래식</item>
+	</string-array>
+
+</resources>

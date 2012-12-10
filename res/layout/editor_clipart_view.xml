@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" 
+    android:background="@drawable/pop_list_bg"
+    android:id="@+id/clipart_container">
+    
+	<RelativeLayout 
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:background="@drawable/pop_list_topbar">
+        <TextView 
+            android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:layout_alignParentLeft="true"
+    		android:layout_centerVertical="true"
+    		android:layout_marginLeft="@dimen/clipart_view_margin"
+    		android:textSize="@dimen/clipart_view_title_font_size"
+    		android:text="@string/clipart_title"/>
+        <ImageButton
+            android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:layout_alignParentRight="true"
+    		android:layout_centerVertical="true"
+    		android:layout_marginRight="@dimen/clipart_view_margin"
+    		android:src="@drawable/icon_close"
+    		android:background="@null"
+    		android:id="@+id/clipart_view_close_btn"/>
+    </RelativeLayout>
+	    
+	<LinearLayout 
+        android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:orientation="vertical">
+	    <com.samsung.photodesk.editor.EditorClipArtGridView 
+	        android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:layout_margin="@dimen/clipart_view_margin"
+	    	android:listSelector="@drawable/gridview_selector"
+	    	android:numColumns="3"
+	    	android:background="#ff7a7a7a"
+	    	android:id="@+id/clipart_gv"/>     
+    </LinearLayout>
+    
+
+</LinearLayout>

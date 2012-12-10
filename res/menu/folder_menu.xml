@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:id="@+id/share" android:showAsAction="ifRoom" android:icon="@android:drawable/ic_menu_share" android:title="@string/share" android:actionProviderClass="android.widget.ShareActionProvider"/>
+    <item android:id="@+id/hide" android:showAsAction="ifRoom" android:title="@string/hidden_Folder" android:icon="?attr/actionBarIconHiddenFolder" />    
+    <item android:id="@+id/protect"  android:showAsAction="ifRoom" android:title="@string/protect" android:icon="?attr/actionBarIconProtect" />
+    <item android:id="@+id/unprotect"  android:showAsAction="ifRoom" android:title="@string/unprotect" android:icon="?attr/actionBarIconProtect" />
+    <item android:id="@+id/folder_rename" android:showAsAction="ifRoom" android:title="@string/edit" android:icon="?attr/actionBarIconName" />
+    <item android:id="@+id/delete" android:showAsAction="ifRoom" android:title="@string/delete" android:icon="?attr/actionBarIconDel" />
+    <item android:id="@+id/merge" android:showAsAction="ifRoom" android:title="@string/merge_folders" android:icon="?attr/actionBarIconFolderAdd" />
+    <item android:icon="?attr/actionBarIconSlideShow" android:id="@+id/folder_slide" android:showAsAction="ifRoom" android:title="@string/slideshow" />
+    <item android:id="@+id/link" android:showAsAction="ifRoom" android:title="@string/link_to_homescreen" android:icon="?attr/actionBarIconShortCut"/>
+    <item android:id="@+id/add_new_folder"></item>
+    <item android:id="@+id/drag_drop"></item>
+</menu>

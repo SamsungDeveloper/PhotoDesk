@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <bool name="support_simple_folder">true</bool>
+    <bool name="support_list_folder">true</bool>
+    <bool name="support_grid_folder">false</bool>
+    
+    <integer name="thumb_size">150</integer>
+    <integer name="thumb_crop_size_w">150</integer>
+    <integer name="thumb_crop_size_h">130</integer>
+    
+    <bool name="support_exif_thumb">true</bool>
+    
+    <bool name="device_orientation">true</bool>
+    <integer name="device_dpi">0</integer>
+</resources>

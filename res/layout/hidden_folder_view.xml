@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="?android:attr/actionBarSize"
+    android:background="?attr/folderViewBG" >
+    
+    <GridView 
+        android:id="@+id/gvHiddenFolder"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:columnWidth="@dimen/large_grid_item_width"
+            android:gravity="center"
+            android:numColumns="auto_fit"
+            android:stretchMode="columnWidth"
+		    android:scrollbars="none"
+		    android:listSelector="@drawable/folder_view_list_grid_selector" 
+		    >
+        
+    </GridView>
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/actionbar_shadow_height"
+        android:background="?attr/actionBarShadow" />
+</RelativeLayout>

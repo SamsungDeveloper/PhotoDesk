@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <dimen name="base_text_size">12sp</dimen>
+    <dimen name="small_text_size">11sp</dimen>
+    <dimen name="large_text_size">15sp</dimen>
+    <dimen name="x_large_text_size">18sp</dimen>
+    <dimen name="xx_large_text_size">25sp</dimen>
+    
+    <dimen name="simple_thumb_width">100dip</dimen>
+    <dimen name="simple_thumb_height">80dip</dimen>
+    <dimen name="simple_item_height">115dip</dimen>
+    
+    <dimen name="simple_thumb_padding_left">1.5dip</dimen>
+    <dimen name="simple_thumb_padding_top">3dip</dimen>
+    <dimen name="simple_thumb_padding_right">3.5dip</dimen>
+    <dimen name="simple_thumb_padding_bottom">2dip</dimen>
+    
+    <dimen name="folder_large_thumb_padding_left">1dip</dimen>
+    <dimen name="folder_large_thumb_padding_top">2.5dip</dimen>
+    <dimen name="folder_large_thumb_padding_right">3dip</dimen>
+    <dimen name="folder_large_thumb_padding_bottom">1.5dip</dimen>
+    
+    <dimen name="folder_list_thumb_padding_left">2dip</dimen>
+    <dimen name="folder_list_thumb_padding_top">2.5dip</dimen>
+    <dimen name="folder_list_thumb_padding_right">3dip</dimen>
+    <dimen name="folder_list_thumb_padding_bottom">1.5dip</dimen>
+    
+    <dimen name="content_grid_image_padding_left">4.5dip</dimen>
+    <dimen name="content_grid_image_padding_top">2.5dip</dimen>
+    <dimen name="content_grid_image_padding_right">4.5dip</dimen>
+    <dimen name="content_grid_image_padding_bottom">6dip</dimen>
+    
+
+    <dimen name="content_image_check_margin_top">5.5dip</dimen>
+    <dimen name="content_image_check_margin_right">7.5dip</dimen>
+    <dimen name="content_image_protect_margin_right">5dip</dimen>
+    <dimen name="content_image_protect_margin_bottom">7dip</dimen>
+    
+    <dimen name="content_slide_protect_margin_right">3dip</dimen>
+    <dimen name="content_slide_protect_margin_bottom">3dip</dimen>
+    
+    <dimen name="folder_list_image_check_margin_top">2dip</dimen>
+    <dimen name="folder_list_image_check_margin_right">5dip</dimen>
+    <dimen name="folder_list_image_protect_margin_right">8dip</dimen>    
+    <dimen name="folder_list_image_protect_margin_bottom">3dip</dimen>
+    
+    <dimen name="folder_grid_image_check_margin_top">4dip</dimen>
+    <dimen name="folder_grid_image_check_margin_right">8dip</dimen>
+    <dimen name="folder_grid_image_protect_margin_right">7dip</dimen>
+    <dimen name="folder_grid_image_protect_margin_bottom">4dip</dimen>
+    
+    <dimen name="folder_simple_image_check_margin_top">7dip</dimen>
+    <dimen name="folder_simple_image_check_margin_right">9.5dip</dimen>
+    <dimen name="folder_simple_image_protect_margin_right">8dip</dimen>
+    <dimen name="folder_simple_image_protect_margin_bottom">4.5dip</dimen>
+    
+    <dimen name="folder_large_grid_check_margin_top">7dip</dimen>
+    <dimen name="folder_large_grid_check_margin_right">10dip</dimen>
+    <dimen name="folder_large_grid_protect_margin_right">9dip</dimen>
+    <dimen name="folder_large_grid_protect_margin_bottom">4dip</dimen>
+    
+    <dimen name="actionbar_size">40dip</dimen>
+    <dimen name="actionbar_shadow_height">2.5dip</dimen>
+    
+    <dimen name="helpinfo_size">-0.5dp</dimen>
+    <dimen name="helpinfo_pinch_img">0dp</dimen>
+    
+    <!-- ================================Dialog xhdpi=====================================  -->   
+    <dimen name="dialog_width">300dip</dimen>
+    <dimen name="dialog_height">165dip</dimen>
+    <dimen name="dialog_padding_left">5dip</dimen>
+    <dimen name="dialog_padding_top">3dip</dimen>
+    <dimen name="dialog_padding_right">4.5dip</dimen>
+    <dimen name="dialog_padding_bottom">7.5dip</dimen>
+    <dimen name="dialog_topbar_height">45dip</dimen>
+    <dimen name="dialog_topbar_padding_left">20dip</dimen>
+    <dimen name="dialog_topbar_padding_right">20dip</dimen>
+    <dimen name="dialog_title_text_size">15sp</dimen>
+    <dimen name="dialog_summary_height">60dip</dimen>
+    <dimen name="dialog_btn_height">40dip</dimen>
+    <dimen name="dialog_btn_gap">7.5dip</dimen>
+    <dimen name="dialog_btn_group_height">60dip</dimen>
+    <dimen name="dialog_btn_group_padding_left">20dip</dimen>
+    <dimen name="dialog_btn_group_padding_right">20dip</dimen>
+    <dimen name="dialog_base_summary_padding_top">20dip</dimen>
+    <dimen name="dialog_base_summary_padding_bottom">20dip</dimen>
+    
+ <!-- ================================Hover popup xhdpi=====================================  -->   
+    <dimen name="hover_popup_scrollview_layout_margin_top_width">15dip</dimen>
+    <dimen name="hover_popup_arrowdown_layout_margin_top_width">-5dip</dimen>
+   <dimen name="hover_popup_maxwidth">750dip</dimen>
+    <dimen name="detail_view_move_gap">7.5dip</dimen>
+
+    
+     <dimen name="input_dialog_height">50dp</dimen>
+     <dimen name="myalbum_title_dialog_height">50dp</dimen>
+    <dimen name="content_empty_sdcard_text_size">25dip</dimen>
+<!-- ================================EditMap popup xhdpi===================================== -->        
+    <dimen name="map_small_thumb_width">140dip</dimen>
+    <dimen name="map_small_thumb_height">110dip</dimen>
+    
+    <dimen name="map_small_item_height">200dip</dimen>
+    <dimen name="map_small_item_width">300dip</dimen>
+    <dimen name="map_position_y">70px</dimen>
+    
+         <!-- ================================Editor topbar xhdpi===================================== -->
+    <dimen name="editor_top_bar_margin">10dip</dimen>
+    <dimen name="editor_top_bar_text_size">15sp</dimen>
+    <dimen name="editor_top_bar_text_width">120dip</dimen>
+    <dimen name="editor_top_bar_text_width_land">200dip</dimen>
+    
+    
+            <!-- ===============================My album ==================================== -->
+    <dimen name="myalbum_pattern_item_width">90dip</dimen>
+    <dimen name="myalbum_pattern_item_height">90dip</dimen>   
+    
+    <dimen name="myalbum_frame_item_width">90dip</dimen>
+    <dimen name="myalbum_frame_item_height">90dip</dimen>  
+    
+	<dimen name="album_frame_width">130dp</dimen>
+	<dimen name="album_frame_height">100dp</dimen>
+	<dimen name="album_frame_padding_left">35dp</dimen>
+    <dimen name="album_frame_padding_top">0dp</dimen>
+    <dimen name="album_frame_padding_right">35dp</dimen>
+    <dimen name="album_frame_padding_bottom">0dp</dimen>
+    
+    <dimen name="myalbum_page_section_text_size">10sp</dimen>
+    <dimen name="myalbum_page_section_padding_left">5dip</dimen>
+    <dimen name="myalbum_page_section_padding_top">1dip</dimen>
+    <dimen name="myalbum_page_section_padding_right">5dip</dimen>
+    <dimen name="myalbum_page_section_padding_bottom">1dip</dimen>
+    
+</resources>

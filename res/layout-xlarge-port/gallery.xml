@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="?android:attr/actionBarSize"
+    android:background="?attr/contentViewBG" >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <FrameLayout
+            android:id="@+id/folderView"
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="25"
+            android:background="?attr/folderViewBG" >
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/contentView"
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="75" >
+        </FrameLayout>
+    </LinearLayout>
+    
+    <TextView 
+        android:id="@+id/tvEmptyItem"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/empty_sdcard_image"
+        android:textSize="@dimen/content_empty_sdcard_text_size"
+        android:textColor="?attr/defaultTextColor"
+        android:visibility="gone"
+    	android:background="?attr/contentViewBG"
+    	android:gravity="center" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/actionbar_shadow_height"
+        android:background="?attr/actionBarShadow" />
+    
+</FrameLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:gravity="center"
+    android:id="@+id/lLFilterItem">"
+    <com.samsung.photodesk.editor.FilterItemImageView 
+        android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	
+    	android:src="@drawable/ic_launcher"
+    	android:background="#00000000"
+    	android:id="@+id/iVFilterImage"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/filter_gv_item_font_size" 
+        android:id="@+id/tVFilterName"/>
+
+</LinearLayout>

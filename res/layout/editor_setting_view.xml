@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/settingView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="?android:attr/actionBarSize"
+    android:background="?attr/contentViewBG" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#29000000" >
+    </FrameLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/setting_left_margin"
+        android:layout_marginRight="@dimen/setting_left_margin"
+        android:background="?attr/contentViewBG" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <!-- ================= SAMM Setting category ================== -->
+
+            <LinearLayout
+                android:id="@+id/SAMMOption"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/SAMMSettingCategory"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/setting_category_height"
+                    android:background="#50000000"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/setting_left_text_margin" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/samm_setting_category"
+                        android:textColor="#ffffff"
+                        android:textSize="@dimen/x_large_text_size"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <!-- ================== SAMM Setting 1. save iamge size ================== -->
+
+                <LinearLayout
+                    android:id="@+id/EdSettingSaveSize"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/setting_item_height"
+                    android:background="?attr/baseSelector"
+                    android:clickable="true"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical"
+                    android:paddingLeft="@dimen/setting_item_text_margin" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:text="@string/samm_img_size_title"
+                        android:textColor="?attr/editorSettingTitleTextColor"
+                        android:textSize="@dimen/x_large_text_size" />
+
+                    <TextView
+                        android:id="@+id/SaveSizeDescription"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:textColor="?attr/editorSettingDescriptionTextColor"
+                        android:textSize="@dimen/setting_description_text_size" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?attr/settingLine" />
+
+                <!-- ================== SAMM Setting 2. save image quality ================== -->
+
+                <LinearLayout
+                    android:id="@+id/EdSettingSaveQuality"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/setting_item_height"
+                    android:background="?attr/baseSelector"
+                    android:clickable="true"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical"
+                    android:paddingLeft="@dimen/setting_item_text_margin" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:text="@string/samm_img_quality_title"
+                        android:textColor="?attr/editorSettingTitleTextColor"
+                        android:textSize="@dimen/x_large_text_size" />
+
+                    <TextView
+                        android:id="@+id/SaveQualityDescript"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:textColor="?attr/editorSettingDescriptionTextColor"
+                        android:textSize="@dimen/setting_description_text_size" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- ================== Animation Setting category ================== -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/setting_category_height"
+                android:alpha="50"
+                android:background="#50000000"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/setting_left_text_margin" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ani_setting_category"
+                    android:textColor="#ffffff"
+                    android:textSize="@dimen/x_large_text_size"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <!-- ================== Animation Setting 1. speed of the animation ================== -->
+
+            <LinearLayout
+                android:id="@+id/EdSettingAniSpeed"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/setting_item_height"
+                android:background="?attr/baseSelector"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/setting_item_text_margin" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="@string/samm_animation_speed_title"
+                    android:textColor="?attr/editorSettingTitleTextColor"
+                    android:textSize="@dimen/x_large_text_size" />
+
+                <TextView
+                    android:id="@+id/AniSpeedDescript"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:textColor="?attr/editorSettingDescriptionTextColor"
+                    android:textSize="@dimen/setting_description_text_size" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/settingLine" />
+
+            <!-- ================== Animation Setting 2. background audio play ================== -->
+
+            <LinearLayout
+                android:id="@+id/EdSettingBgPlay"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/setting_item_height"
+                android:background="?attr/baseSelector"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/setting_item_text_margin"
+                android:paddingRight="@dimen/setting_item_text_margin" >
+
+                <LinearLayout
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="10"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:paddingRight="10dip"
+                        android:text="@string/samm_bg_audio_play_title"
+                        android:textColor="?attr/editorSettingTitleTextColor"
+                        android:textSize="@dimen/x_large_text_size" />
+
+                    <TextView
+                        android:id="@+id/BgPlayDescript"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:textColor="?attr/editorSettingDescriptionTextColor"
+                        android:textSize="@dimen/setting_description_text_size" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/BgPlayCheck"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/settingLine" />
+
+            <!-- ================== Animation Setting 3. background audio auto replay================== -->
+
+            <LinearLayout
+                android:id="@+id/EdSettingBgReplay"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/setting_item_height"
+                android:background="?attr/baseSelector"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/setting_item_text_margin"
+                android:paddingRight="@dimen/setting_item_text_margin" >
+
+                <LinearLayout
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="10"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:paddingRight="10dip"
+                        android:text="@string/samm_bg_audio_replay_title"
+                        android:textColor="?attr/editorSettingTitleTextColor"
+                        android:textSize="@dimen/x_large_text_size" />
+
+                    <TextView
+                        android:id="@+id/BgReplayDescript"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:textColor="?attr/editorSettingDescriptionTextColor"
+                        android:textSize="@dimen/setting_description_text_size" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/BgReplayCheck"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/settingLine" />
+            <!-- ================== Animation Setting 4. play animation using sound effect ================== -->
+
+            <LinearLayout
+                android:id="@+id/EdSettingEffectSound"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/setting_item_height"
+                android:background="?attr/baseSelector"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/setting_item_text_margin"
+                android:paddingRight="@dimen/setting_item_text_margin" >
+
+                <LinearLayout
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="10"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:paddingRight="10dip"
+                        android:text="@string/samm_bg_audio_sound_effect_title"
+                        android:textColor="?attr/editorSettingTitleTextColor"
+                        android:textSize="@dimen/x_large_text_size" />
+
+                    <TextView
+                        android:id="@+id/EffectSoundDescript"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:textColor="?attr/editorSettingDescriptionTextColor"
+                        android:textSize="@dimen/setting_description_text_size"/>
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/EffectSoundCheck"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+            </LinearLayout>
+            
+            
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/settingLine" />
+        </LinearLayout>
+    </ScrollView>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/actionbar_shadow_height"
+        android:background="?attr/actionBarShadow" />
+
+</FrameLayout>

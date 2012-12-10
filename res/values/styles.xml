@@ -1,0 +1,546 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Copyright (C) 2011 The Android Open Source Project
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+ -->
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <style name="ActionBar" parent="@android:style/Widget.Holo.ActionBar" >
+        <item name="android:background">?attr/actionBarBG</item>
+    </style>
+    
+    <style name="AppTheme" parent="@android:style/Theme.Holo">
+        <item name="android:windowActionBarOverlay">true</item>
+    	<item name="android:actionOverflowButtonStyle">@style/actionBarOverFlow</item>
+        <item name="android:actionBarStyle">@style/ActionBar</item>
+        <item name="android:selectableItemBackground">@android:color/transparent</item>
+        <item name="android:actionBarSize">@dimen/actionbar_size</item>
+<!--  		<item name="android:backgroundDimEnabled">true</item> -->
+    </style>
+    
+    <style name="AppTheme.Type1" parent="@style/AppTheme">
+<!-- 	    <item name="android:fastScrollThumbDrawable">@drawable/type1_content_scroll_selector</item> -->
+	    
+<!-- ========================================================Type1_Base========================================================== -->
+		<item name="baseSelector">@drawable/type1_base_selector</item>
+		<item name="defaultTextColor">#EEEEEE</item>
+			
+<!-- ========================================================Type1_Folder========================================================== -->	  
+<!-- folderView Theme start -->
+	    <item name="folderViewFolderOptionBtnBG">@drawable/type1_main_left_bottom_btn_bg</item>
+	    <item name="folderViewFolderOptionDivider">@drawable/type1_main_left_bottom_line</item>
+	    <item name="folderViewFolderOptionBtnAdd">@drawable/type1_main_left_bottom_btn_plus_selector</item>
+	    <item name="folderViewFolderOptionBtnView">@drawable/type1_main_left_bottom_btn_view_selector</item>
+	    <item name="folderViewBG">@drawable/type1_folder_view_bg</item>
+<!-- 	    <item name="folderViewBG">#ffffffff</item> -->
+	    <item name="folderViewSelectCheckBox">@drawable/type1_folder_image_check</item>
+	    <item name="folderViewSelectShadow">@drawable/type1_shadow_folder_select</item>
+	    <item name="folderViewShadow">@drawable/type1_shadow_folder</item>
+	    <item name="folderViewBtnClose">@drawable/type1_label_close</item>
+	    <item name="folderViewListDivider">@drawable/type1_line</item>
+	    <item name="folderViewLargeGridLine">@drawable/type1_large_grid_line_selector</item>
+	    <item name="folderViewBaseText">@drawable/type1_base_text_selector</item>
+<!-- folderView Theme end -->
+
+<!-- ========================================================Type1_Content========================================================== -->
+<!-- Content View Theme start -->
+	    <item name="contentViewSelectFrame">#ffeb48</item>
+	    <item name="contentViewFrame">#ffffff</item>
+	    <item name="contentViewBG">@drawable/type1_content_view_bg</item>
+<!-- 	    <item name="contentViewBG">#ffffffff</item> -->
+	    <item name="contentViewImageCheckBox">@drawable/type1_content_image_check</item>
+	    <item name="contentViewLeftLength">@drawable/type1_content_view_left_length</item>
+	    <item name="contentViewLeftLengthShadow">@android:color/transparent</item>
+	    <item name="contentViewBtnOpen">@drawable/type1_label_open</item>
+	    <item name="contentViewScrollBar">@drawable/type1_content_scroll_selector</item>
+	    <item name="contentViewImageShadow">@drawable/type1_shadow_photo</item>
+<!-- Content View Theme end -->
+
+<!-- ========================================================Type1_ActionBar========================================================== -->
+<!-- ActionBar Theme Icon start -->
+		<item name="actionBarBG">@drawable/type1_action_bar_bg</item>
+		<item name="actionBarShadow">@drawable/type1_actionbar_shadow_bg</item>
+		<item name="actionBarBtnAllSelect">@drawable/type1_btn_topbar_allselect_selector</item>
+	    <item name="actionBarIconAlbum">@drawable/type1_menu_icon_album_selector</item>
+	    <item name="actionBarIconCamera">@drawable/type1_menu_icon_camera_selector</item>
+	    <item name="actionBarIconCollection">@drawable/type1_menu_icon_collection_selector</item>
+	    <item name="actionBarIconCopy">@drawable/type1_menu_icon_copy_selector</item>
+	    <item name="actionBarIconDel">@drawable/type1_menu_icon_del_selector</item>
+	    <item name="actionBarIconEdit">@drawable/type1_menu_icon_edit_selector</item>
+	    <item name="actionBarIconFolderAdd">@drawable/type1_menu_icon_folder_add_selector</item>
+	    <item name="actionBarIconProtect">@drawable/type1_menu_icon_protect_selector</item>
+	    <item name="actionBarIconMore">@drawable/type1_menu_icon_more_selector</item>
+	    <item name="actionBarIconMove">@drawable/type1_menu_icon_move_selector</item>
+	    <item name="actionBarIconName">@drawable/type1_menu_icon_name_selector</item>
+	    <item name="actionBarIconRedo">@drawable/type1_menu_icon_redo_selector</item>
+	    <item name="actionBarIconRotate">@drawable/type1_menu_icon_rotate_selector</item>
+	    <item name="actionBarIconSave">@drawable/type1_menu_icon_save_selector</item>
+	    <item name="actionBarIconSetting">@drawable/type1_menu_icon_setting_selector</item>
+	    <item name="actionBarIconShare">@drawable/type1_menu_icon_share_selector</item>
+	    <item name="actionBarIconSlideShow">@drawable/type1_menu_icon_slideshow_selector</item>
+	    <item name="actionBarIconSort">@drawable/type1_menu_icon_sort_selector</item>
+	    <item name="actionBarIconUndo">@drawable/type1_menu_icon_undo_selector</item>
+	    <item name="actionBarIconNewFolder">@drawable/type1_menu_icon_folder_selector</item>
+	    <item name="actionBarIconSetAs">@drawable/type1_menu_icon_set_as_selector</item>
+	    <item name="actionBarIconShortCut">@drawable/type1_menu_icon_go_selector</item>
+	    <item name="actionBarIconHiddenFolder">@drawable/type1_menu_icon_hidden_folder_show_selector</item>
+	    <item name="actionBarIconhiddenFolderUnHide">@drawable/type1_menu_icon_hidden_folder_unhide_selector</item>
+	  
+	    
+	    <item name="actionBarIconBackground">@drawable/type1_menu_icon_background_selector</item>
+	    <item name="actionBarIconFrame">@drawable/type1_menu_icon_frame_selector</item>
+	    <item name="actionBarIconLayout">@drawable/type1_menu_icon_layout_selector</item>
+	    <item name="actionBarIconMyalbum">@drawable/type1_menu_icon_myalbum_selector</item>
+	    <item name="actionBarIconPageplus">@drawable/type1_menu_icon_pageplus_selector</item>
+	    <item name="actionBarIconMusic">@drawable/type1_menu_icon_music_selector</item>
+	    <item name="actionBarIconComplete">@drawable/type1_menu_icon_complete_selector</item>
+	    
+
+
+	    
+	    
+<!-- ActionBar Theme Icon end -->
+
+<!-- ========================================================Type1_ImageDetail========================================================== -->
+		<item name="imageDetailActionBar">@drawable/type1_action_bar_opacity_bg</item>
+
+<!-- ========================================================Type1_ImageEditor========================================================== -->
+<!-- ImageEditor Theme start -->
+		<item name="editToolsLayerBG">@drawable/type1_edit_tools_layer_bg</item>
+		<item name="editToolsLayerStroke">@drawable/type1_edit_tools_layer_stroke</item>
+		<!-- <item name="editIconAnima">@drawable/type1_edit_icon_anima_selector</item> -->
+		<item name="editIconAnimaPlay">@drawable/type1_edit_icon_anima_play_selector</item>
+		<item name="editIconAnima">@drawable/type1_edit_icon_anima</item>
+		<item name="editIconImagePlus">@drawable/type1_edit_icon_imageplus_selector</item>
+		<item name="editIconFilter">@drawable/type1_edit_icon_filter_selector</item>
+		<item name="editIconMusic">@drawable/type1_edit_icon_music_selector</item>
+		<item name="editIconVoicePlay">@drawable/type1_edit_icon_voice_play_selector</item>
+		<item name="editIconVoice">@drawable/type1_edit_icon_voice_selector</item>
+		<item name="editIconVoiceing">@drawable/type1_edit_icon_voice_ing</item>
+		<item name="editIconAddPicOnBoth">@drawable/type1_edit_icon_add_pic_on_both</item>
+		<item name="editIconAddPicOnHand">@drawable/type1_edit_icon_add_pic_on_hand</item>
+		<item name="editIconAddPicOnPen">@drawable/type1_edit_icon_add_pic_on_pen</item>
+		<item name="editIconAddPicOn">@drawable/type1_edit_icon_add_pic_on</item>
+		<item name="editIconAddPic">@drawable/type1_edit_icon_add_pic</item>
+		<item name="editIconEraserOnBoth">@drawable/type1_edit_icon_eraser_on_both</item>
+		<item name="editIconEraserOnHand">@drawable/type1_edit_icon_eraser_on_hand</item>
+		<item name="editIconEraserOnPen">@drawable/type1_edit_icon_eraser_on_pen</item>
+		<item name="editIconEraserOn">@drawable/type1_edit_icon_eraser_on</item>
+		<item name="editIconEraser">@drawable/type1_edit_icon_eraser</item>
+		<item name="editIconPenOnBoth">@drawable/type1_edit_icon_pen_on_both</item>
+		<item name="editIconPenOnHand">@drawable/type1_edit_icon_pen_on_hand</item>
+		<item name="editIconPenOnPen">@drawable/type1_edit_icon_pen_on_pen</item>
+		<item name="editIconPenOn">@drawable/type1_edit_icon_pen_on</item>
+		<item name="editIconPen">@drawable/type1_edit_icon_pen</item>
+		<item name="editIconTextOnBoth">@drawable/type1_edit_icon_text_on_both</item>
+		<item name="editIconTextOnHand">@drawable/type1_edit_icon_text_on_hand</item>
+		<item name="editIconTextOnPen">@drawable/type1_edit_icon_text_on_pen</item>
+		<item name="editIconTextOn">@drawable/type1_edit_icon_text_on</item>
+		<item name="editIconText">@drawable/type1_edit_icon_text</item>
+		<item name="editIconTopBarOpenArrow">@drawable/type1_edit_arrow_open_selector</item>
+		<item name="editIconTopBarCloseArrow">@drawable/type1_edit_arrow_close_selector</item>
+		<item name="itemNoneCheckBox">@drawable/type1_none_check_box</item>
+		
+		<item name="editorSettingTitleTextColor">#efefef</item>
+		<item name="editorSettingDescriptionTextColor">#b2763b</item>
+<!-- ImageEditor Theme end -->
+<!-- Help info Text start -->
+	    <item name="helpInfoTextColor">#EEEEEE</item>
+<!-- Help info Text end -->
+
+<!-- ========================================================Type1_Setting========================================================== -->
+		<item name="settingLine">@drawable/type1_setting_line</item>
+		<item name="settingAboutTextColor">#FF848383</item>
+		<item name="themePopUpRadioBtn">@drawable/type1_radio_selector</item>
+
+<!-- ========================================================Type1_Base_Dialog========================================================== -->
+        <item name="popupBg">@drawable/type1_pop_list_bg</item>
+        <item name="btnPopBg">@drawable/type1_btn_pop_selector</item>
+        <item name="popupTopbarBg">@drawable/type1_pop_list_topbar</item>
+        <item name="popupListLine">@drawable/type1_pop_list_line</item>	    
+    </style>
+    
+    
+    
+    
+    <style name="AppTheme.Type2" parent="@style/AppTheme">
+<!-- 	    <item name="android:fastScrollThumbDrawable">@drawable/type2_content_scroll_selector</item> -->
+	    
+<!-- ========================================================Type2_Base========================================================== -->
+		<item name="baseSelector">@drawable/type2_base_selector</item>
+		<item name="defaultTextColor">#999999</item>
+		
+<!-- ========================================================Type2_Folder========================================================== -->	  
+<!-- folderView Theme start -->
+	    <item name="folderViewFolderOptionBtnBG">@drawable/type2_main_left_bottom_btn_bg</item>
+	    <item name="folderViewFolderOptionDivider">@drawable/type2_main_left_bottom_line</item>
+	    <item name="folderViewFolderOptionBtnAdd">@drawable/type2_main_left_bottom_btn_plus_selector</item>
+	    <item name="folderViewFolderOptionBtnView">@drawable/type2_main_left_bottom_btn_view_selector</item>
+	    <item name="folderViewBG">@drawable/type2_folder_view_bg</item>
+	    <item name="folderViewSelectCheckBox">@drawable/type1_folder_image_check</item>
+	    <item name="folderViewSelectShadow">@drawable/type1_shadow_folder_select</item>
+	    <item name="folderViewShadow">@drawable/type1_shadow_folder</item>
+	    <item name="folderViewBtnClose">@drawable/type2_label_close</item>
+	    <item name="folderViewListDivider">@drawable/type1_line</item>
+	    <item name="folderViewLargeGridLine">@drawable/type2_large_grid_line_selector</item>
+	    <item name="folderViewBaseText">@drawable/type2_base_text_selector</item>
+<!-- folderView Theme end -->
+
+<!-- ========================================================Type2_Content========================================================== -->
+<!-- Content View Theme start -->
+	    <item name="contentViewSelectFrame">#ffeb48</item>
+	    <item name="contentViewFrame">#ffffff</item>
+	    <item name="contentViewBG">@drawable/type2_content_view_bg</item>
+	    <item name="contentViewImageCheckBox">@drawable/type1_content_image_check</item>
+	    <item name="contentViewLeftLength">@drawable/type2_content_view_left_length</item>
+	    <item name="contentViewLeftLengthShadow">@drawable/type2_left_label_shadow</item>
+	    <item name="contentViewBtnOpen">@drawable/type2_label_open</item>
+	    <item name="contentViewScrollBar">@drawable/type2_content_scroll_selector</item>
+	    <item name="contentViewImageShadow">@drawable/type2_shadow_photo</item>
+<!-- Content View Theme end -->
+
+<!-- ========================================================Type2_ActionBar========================================================== -->
+<!-- ActionBar Theme Icon start -->
+		<item name="actionBarBG">@drawable/type2_action_bar_bg</item>
+		<item name="actionBarShadow">@drawable/type2_actionbar_shadow_bg</item>
+		<item name="actionBarBtnAllSelect">@drawable/type2_btn_topbar_allselect_selector</item>
+	    <item name="actionBarIconAlbum">@drawable/type2_menu_icon_album_selector</item>
+	    <item name="actionBarIconCamera">@drawable/type2_menu_icon_camera_selector</item>
+	    <item name="actionBarIconCollection">@drawable/type2_menu_icon_collection_selector</item>
+	    <item name="actionBarIconCopy">@drawable/type2_menu_icon_copy_selector</item>
+	    <item name="actionBarIconDel">@drawable/type2_menu_icon_del_selector</item>
+	    <item name="actionBarIconEdit">@drawable/type2_menu_icon_edit_selector</item>
+	    <item name="actionBarIconFolderAdd">@drawable/type2_menu_icon_folder_add_selector</item>
+	    <item name="actionBarIconProtect">@drawable/type2_menu_icon_protect_selector</item>
+	    <item name="actionBarIconMore">@drawable/type2_menu_icon_more_selector</item>
+	    <item name="actionBarIconMove">@drawable/type2_menu_icon_move_selector</item>
+	    <item name="actionBarIconName">@drawable/type2_menu_icon_name_selector</item>
+	    <item name="actionBarIconRedo">@drawable/type2_menu_icon_redo_selector</item>
+	    <item name="actionBarIconRotate">@drawable/type2_menu_icon_rotate_selector</item>
+	    <item name="actionBarIconSave">@drawable/type2_menu_icon_save_selector</item>
+	    <item name="actionBarIconSetting">@drawable/type2_menu_icon_setting_selector</item>
+	    <item name="actionBarIconShare">@drawable/type2_menu_icon_share_selector</item>
+	    <item name="actionBarIconSlideShow">@drawable/type2_menu_icon_slideshow_selector</item>
+	    <item name="actionBarIconSort">@drawable/type2_menu_icon_sort_selector</item>
+	    <item name="actionBarIconUndo">@drawable/type2_menu_icon_undo_selector</item>
+	    <item name="actionBarIconNewFolder">@drawable/type2_menu_icon_folder_selector</item>
+	    <item name="actionBarIconSetAs">@drawable/type2_menu_icon_set_as_selector</item>
+	    <item name="actionBarIconShortCut">@drawable/type2_menu_icon_go_selector</item>
+	    <item name="actionBarIconHiddenFolder">@drawable/type2_menu_icon_hidden_folder_show_selector</item>
+	    <item name="actionBarIconhiddenFolderUnHide">@drawable/type2_menu_icon_hidden_folder_unhide_selector</item>
+	    
+	    
+	    <item name="actionBarIconBackground">@drawable/type2_menu_icon_background_selector</item>
+	    <item name="actionBarIconFrame">@drawable/type2_menu_icon_frame_selector</item>
+	    <item name="actionBarIconLayout">@drawable/type2_menu_icon_layout_selector</item>
+	    <item name="actionBarIconMyalbum">@drawable/type2_menu_icon_myalbum_selector</item>
+	    <item name="actionBarIconPageplus">@drawable/type2_menu_icon_pageplus_selector</item>
+	    <item name="actionBarIconMusic">@drawable/type2_menu_icon_music_selector</item>
+	    <item name="actionBarIconComplete">@drawable/type1_menu_icon_complete_selector</item>
+<!-- ActionBar Theme Icon end -->
+
+<!-- ========================================================Type2_ImageDetail========================================================== -->
+		<item name="imageDetailActionBar">@drawable/type2_action_bar_opacity_bg</item>
+
+<!-- ========================================================Type2_ImageEditor========================================================== -->
+<!-- ImageEditor Theme start -->
+		<item name="editToolsLayerBG">@drawable/type1_edit_tools_layer_bg</item>
+		<item name="editToolsLayerStroke">@drawable/type1_edit_tools_layer_stroke</item>
+		<item name="editIconAnimaPlay">@drawable/type1_edit_icon_anima_play_selector</item>
+		<!-- <item name="editIconAnima">@drawable/type1_edit_icon_anima_selector</item> -->
+		<item name="editIconAnima">@drawable/type1_edit_icon_anima</item>
+		<item name="editIconImagePlus">@drawable/type1_edit_icon_imageplus_selector</item>
+		<item name="editIconFilter">@drawable/type1_edit_icon_filter_selector</item>
+		<item name="editIconMusic">@drawable/type1_edit_icon_music_selector</item>
+		<item name="editIconVoicePlay">@drawable/type1_edit_icon_voice_play_selector</item>
+		<item name="editIconVoice">@drawable/type1_edit_icon_voice_selector</item>
+		<item name="editIconVoiceing">@drawable/type1_edit_icon_voice_ing</item>
+		<item name="editIconAddPicOnBoth">@drawable/type1_edit_icon_add_pic_on_both</item>
+		<item name="editIconAddPicOnHand">@drawable/type1_edit_icon_add_pic_on_hand</item>
+		<item name="editIconAddPicOnPen">@drawable/type1_edit_icon_add_pic_on_pen</item>
+		<item name="editIconAddPicOn">@drawable/type1_edit_icon_add_pic_on</item>
+		<item name="editIconAddPic">@drawable/type1_edit_icon_add_pic</item>
+		<item name="editIconEraserOnBoth">@drawable/type1_edit_icon_eraser_on_both</item>
+		<item name="editIconEraserOnHand">@drawable/type1_edit_icon_eraser_on_hand</item>
+		<item name="editIconEraserOnPen">@drawable/type1_edit_icon_eraser_on_pen</item>
+		<item name="editIconEraserOn">@drawable/type1_edit_icon_eraser_on</item>
+		<item name="editIconEraser">@drawable/type1_edit_icon_eraser</item>
+		<item name="editIconPenOnBoth">@drawable/type1_edit_icon_pen_on_both</item>
+		<item name="editIconPenOnHand">@drawable/type1_edit_icon_pen_on_hand</item>
+		<item name="editIconPenOnPen">@drawable/type1_edit_icon_pen_on_pen</item>
+		<item name="editIconPenOn">@drawable/type1_edit_icon_pen_on</item>
+		<item name="editIconPen">@drawable/type1_edit_icon_pen</item>
+		<item name="editIconTextOnBoth">@drawable/type1_edit_icon_text_on_both</item>
+		<item name="editIconTextOnHand">@drawable/type1_edit_icon_text_on_hand</item>
+		<item name="editIconTextOnPen">@drawable/type1_edit_icon_text_on_pen</item>
+		<item name="editIconTextOn">@drawable/type1_edit_icon_text_on</item>
+		<item name="editIconText">@drawable/type1_edit_icon_text</item>
+		<item name="editIconTopBarOpenArrow">@drawable/type1_edit_arrow_open_selector</item>
+		<item name="editIconTopBarCloseArrow">@drawable/type1_edit_arrow_close_selector</item>
+		<item name="itemNoneCheckBox">@drawable/type1_none_check_box</item>
+		
+		<item name="editorSettingTitleTextColor">#5f514a</item>
+		<item name="editorSettingDescriptionTextColor">#dea034</item>
+		
+<!-- ImageEditor Theme end -->
+<!-- Help info Text start -->
+	    <item name="helpInfoTextColor">#999999</item>
+<!-- Help info Text end -->	  
+
+<!-- ========================================================Type2_Setting========================================================== -->
+		<item name="settingLine">@drawable/type2_large_grid_line</item>
+		<item name="settingAboutTextColor">#FFb14808</item>
+		<item name="themePopUpRadioBtn">@drawable/type2_radio_selector</item>
+
+<!-- ========================================================Type2_Base_Dialog========================================================== -->
+        <item name="popupBg">@drawable/type2_pop_list_bg</item>
+        <item name="btnPopBg">@drawable/type2_btn_pop_selector</item>
+        <item name="popupTopbarBg">@drawable/type2_pop_list_topbar</item>
+        <item name="popupListLine">@drawable/type2_pop_list_line</item>
+    </style>
+    
+    
+    
+    
+    <style name="AppTheme.Type3" parent="@style/AppTheme">
+<!-- 	    <item name="android:fastScrollThumbDrawable">@drawable/type3_content_scroll_selector</item> -->
+
+<!-- ========================================================Type3_Base========================================================== -->
+		<item name="baseSelector">@drawable/type3_base_selector</item>
+		<item name="defaultTextColor">#999999</item>
+		
+<!-- ========================================================Type3_Folder========================================================== -->	    
+<!-- folderView Theme start -->
+	    <item name="folderViewFolderOptionBtnBG">@drawable/type3_main_left_bottom_btn_bg</item>
+	    <item name="folderViewFolderOptionDivider">@drawable/type3_main_left_bottom_line</item>
+	    <item name="folderViewFolderOptionBtnAdd">@drawable/type3_main_left_bottom_btn_plus_selector</item>
+	    <item name="folderViewFolderOptionBtnView">@drawable/type3_main_left_bottom_btn_view_selector</item>
+	    <item name="folderViewBG">@drawable/type3_folder_view_bg</item>
+	    <item name="folderViewSelectCheckBox">@drawable/type3_folder_image_check</item>
+	    <item name="folderViewSelectShadow">@drawable/type3_shadow_folder_select</item>
+	    <item name="folderViewShadow">@drawable/type1_shadow_folder</item>
+	    <item name="folderViewBtnClose">@drawable/type3_label_close</item>
+	    <item name="folderViewListDivider">@drawable/type3_line</item>
+	    <item name="folderViewLargeGridLine">@drawable/type3_large_grid_line_selector</item>
+	    <item name="folderViewBaseText">@drawable/type3_base_text_selector</item>
+<!-- folderView Theme end -->
+
+<!-- ========================================================Type3_Content========================================================== -->
+<!-- Content View Theme start -->
+	    <item name="contentViewSelectFrame">#54DDFF</item>
+	    <item name="contentViewFrame">#FFFFFF</item>
+	    <item name="contentViewBG">@drawable/type3_content_view_bg</item>
+	    <item name="contentViewImageCheckBox">@drawable/type3_content_image_check</item>
+	    <item name="contentViewLeftLength">@drawable/type3_content_view_left_length</item>
+	    <item name="contentViewLeftLengthShadow">@drawable/type3_left_label_shadow</item>
+	    <item name="contentViewBtnOpen">@drawable/type3_label_open</item>
+	    <item name="contentViewScrollBar">@drawable/type3_content_scroll_selector</item>
+	    <item name="contentViewImageShadow">@drawable/type2_shadow_photo</item>
+<!-- Content View Theme end -->
+
+<!-- ========================================================Type3_ActionBar========================================================== -->
+<!-- ActionBar Theme Icon start -->
+		<item name="actionBarBG">@drawable/type3_action_bar_bg</item>
+		<item name="actionBarShadow">@drawable/type3_actionbar_shadow_bg</item>
+		<item name="actionBarBtnAllSelect">@drawable/type2_btn_topbar_allselect_selector</item>
+	    <item name="actionBarIconAlbum">@drawable/type2_menu_icon_album_selector</item>
+	    <item name="actionBarIconCamera">@drawable/type2_menu_icon_camera_selector</item>
+	    <item name="actionBarIconCollection">@drawable/type2_menu_icon_collection_selector</item>
+	    <item name="actionBarIconCopy">@drawable/type2_menu_icon_copy_selector</item>
+	    <item name="actionBarIconDel">@drawable/type2_menu_icon_del_selector</item>
+	    <item name="actionBarIconEdit">@drawable/type2_menu_icon_edit_selector</item>
+	    <item name="actionBarIconFolderAdd">@drawable/type2_menu_icon_folder_add_selector</item>
+	    <item name="actionBarIconProtect">@drawable/type2_menu_icon_protect_selector</item>
+	    <item name="actionBarIconMore">@drawable/type2_menu_icon_more_selector</item>
+	    <item name="actionBarIconMove">@drawable/type2_menu_icon_move_selector</item>
+	    <item name="actionBarIconName">@drawable/type2_menu_icon_name_selector</item>
+	    <item name="actionBarIconRedo">@drawable/type2_menu_icon_redo_selector</item>
+	    <item name="actionBarIconRotate">@drawable/type2_menu_icon_rotate_selector</item>
+	    <item name="actionBarIconSave">@drawable/type2_menu_icon_save_selector</item>
+	    <item name="actionBarIconSetting">@drawable/type2_menu_icon_setting_selector</item>
+	    <item name="actionBarIconShare">@drawable/type2_menu_icon_share_selector</item>
+	    <item name="actionBarIconSlideShow">@drawable/type2_menu_icon_slideshow_selector</item>
+	    <item name="actionBarIconSort">@drawable/type2_menu_icon_sort_selector</item>
+	    <item name="actionBarIconUndo">@drawable/type2_menu_icon_undo_selector</item>
+	    <item name="actionBarIconNewFolder">@drawable/type2_menu_icon_folder_selector</item>
+	    <item name="actionBarIconSetAs">@drawable/type2_menu_icon_set_as_selector</item>
+	    <item name="actionBarIconShortCut">@drawable/type2_menu_icon_go_selector</item>
+	    <item name="actionBarIconHiddenFolder">@drawable/type2_menu_icon_hidden_folder_show_selector</item>
+	    <item name="actionBarIconhiddenFolderUnHide">@drawable/type2_menu_icon_hidden_folder_unhide_selector</item>
+	    	    
+	    <item name="actionBarIconBackground">@drawable/type2_menu_icon_background_selector</item>
+	    <item name="actionBarIconFrame">@drawable/type2_menu_icon_frame_selector</item>
+	    <item name="actionBarIconLayout">@drawable/type2_menu_icon_layout_selector</item>
+	    <item name="actionBarIconMyalbum">@drawable/type2_menu_icon_myalbum_selector</item>
+	    <item name="actionBarIconPageplus">@drawable/type2_menu_icon_pageplus_selector</item>
+	     <item name="actionBarIconMusic">@drawable/type2_menu_icon_music_selector</item>
+	     <item name="actionBarIconComplete">@drawable/type1_menu_icon_complete_selector</item>
+	    
+<!-- ActionBar Theme Icon end -->
+
+<!-- ========================================================Type3_ImageDetail========================================================== -->
+		<item name="imageDetailActionBar">@drawable/type3_action_bar_opacity_bg</item>
+
+<!-- ========================================================Type3_ImageEditor========================================================== -->
+<!-- ImageEditor Theme start -->
+		<item name="editToolsLayerBG">@drawable/type3_edit_tools_layer_bg</item>
+		<item name="editToolsLayerStroke">@drawable/type3_edit_tools_layer_stroke</item>
+		<item name="editIconAnimaPlay">@drawable/type3_edit_icon_anima_play_selector</item>
+		<item name="editIconAnima">@drawable/type3_edit_icon_anima</item>
+		<!-- <item name="editIconAnima">@drawable/type3_edit_icon_anima_selector</item> -->
+		<item name="editIconImagePlus">@drawable/type3_edit_icon_imageplus_selector</item>
+		<item name="editIconFilter">@drawable/type3_edit_icon_filter_selector</item>
+		<item name="editIconMusic">@drawable/type3_edit_icon_music_selector</item>
+		<item name="editIconVoicePlay">@drawable/type3_edit_icon_voice_play_selector</item>
+		<item name="editIconVoice">@drawable/type3_edit_icon_voice_selector</item>
+		<item name="editIconVoiceing">@drawable/type3_edit_icon_voice_ing</item>
+		<item name="editIconAddPicOnBoth">@drawable/type3_edit_icon_add_pic_on_both</item>
+		<item name="editIconAddPicOnHand">@drawable/type3_edit_icon_add_pic_on_hand</item>
+		<item name="editIconAddPicOnPen">@drawable/type3_edit_icon_add_pic_on_pen</item>
+		<item name="editIconAddPicOn">@drawable/type3_edit_icon_add_pic_on</item>
+		<item name="editIconAddPic">@drawable/type3_edit_icon_add_pic</item>
+		<item name="editIconEraserOnBoth">@drawable/type3_edit_icon_eraser_on_both</item>
+		<item name="editIconEraserOnHand">@drawable/type3_edit_icon_eraser_on_hand</item>
+		<item name="editIconEraserOnPen">@drawable/type3_edit_icon_eraser_on_pen</item>
+		<item name="editIconEraserOn">@drawable/type3_edit_icon_eraser_on</item>
+		<item name="editIconEraser">@drawable/type3_edit_icon_eraser</item>
+		<item name="editIconPenOnBoth">@drawable/type3_edit_icon_pen_on_both</item>
+		<item name="editIconPenOnHand">@drawable/type3_edit_icon_pen_on_hand</item>
+		<item name="editIconPenOnPen">@drawable/type3_edit_icon_pen_on_pen</item>
+		<item name="editIconPenOn">@drawable/type3_edit_icon_pen_on</item>
+		<item name="editIconPen">@drawable/type3_edit_icon_pen</item>
+		<item name="editIconTextOnBoth">@drawable/type3_edit_icon_text_on_both</item>
+		<item name="editIconTextOnHand">@drawable/type3_edit_icon_text_on_hand</item>
+		<item name="editIconTextOnPen">@drawable/type3_edit_icon_text_on_pen</item>
+		<item name="editIconTextOn">@drawable/type3_edit_icon_text_on</item>
+		<item name="editIconText">@drawable/type3_edit_icon_text</item>
+		<item name="editIconTopBarOpenArrow">@drawable/type3_edit_arrow_open_selector</item>
+		<item name="editIconTopBarCloseArrow">@drawable/type3_edit_arrow_close_selector</item>
+		<item name="itemNoneCheckBox">@drawable/type3_none_check_box</item>
+		
+		<item name="editorSettingTitleTextColor">#555555</item>
+		<item name="editorSettingDescriptionTextColor">#4dc5ce</item>
+<!-- ImageEditor Theme end -->
+<!-- Help info Text start -->
+	    <item name="helpInfoTextColor">#999999</item>
+<!-- Help info Text end -->
+
+<!-- ========================================================Type3_Setting========================================================== -->
+		<item name="settingLine">@drawable/type3_large_grid_line</item>
+		<item name="settingAboutTextColor">#FF327480</item>
+		<item name="themePopUpRadioBtn">@drawable/type3_radio_selector</item>
+
+<!-- ========================================================Type3_Base_Dialog========================================================== -->
+        <item name="popupBg">@drawable/type3_pop_list_bg</item>
+        <item name="btnPopBg">@drawable/type3_btn_pop_selector</item>
+        <item name="popupTopbarBg">@drawable/type3_pop_list_topbar</item>
+        <item name="popupListLine">@drawable/type3_pop_list_line</item>
+
+    </style>
+
+	<style name="actionBarOverFlow" parent="@android:style/Widget.Holo.ActionButton.Overflow">
+	    <item name="android:src">?attr/actionBarIconCollection</item>
+	</style>
+	
+	    <!-- A theme for a signature custom dialog appearance.  Here we use an ugly
+         custom frame. -->
+    <style name="Theme.CustomDialog" parent="android:style/Theme.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">?attr/popupBg</item>
+    </style>
+    
+    <style name="CustomDialog.Type1" parent="@style/Theme.CustomDialog">
+        <item name="btnPopBg">@drawable/type1_btn_pop_selector</item>
+        <item name="popupBg">@drawable/type1_pop_list_bg</item>
+        <item name="popPasswordIcon">@drawable/type1_pop_password_icon_lock</item>
+    </style>
+    
+    <style name="CustomDialog.Type2" parent="@style/Theme.CustomDialog">
+        <item name="btnPopBg">@drawable/type2_btn_pop_selector</item>
+        <item name="popupBg">@drawable/type2_pop_list_bg</item>
+        <item name="popPasswordIcon">@drawable/type2_pop_password_icon_lock</item>
+    </style>
+    
+    <style name="CustomDialog.Type3" parent="@style/Theme.CustomDialog">
+        <item name="btnPopBg">@drawable/type3_btn_pop_selector</item>
+        <item name="popupBg">@drawable/type3_pop_list_bg</item>
+        <item name="popPasswordIcon">@drawable/type3_pop_password_icon_lock</item>
+    </style>
+    
+    <style name="SpenDialog" parent="@android:style/Theme.Translucent.NoTitleBar.Fullscreen">
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <style name="Animations" />
+	<!-- PopDownWindow -->
+	<style name="Animations.PopDownWindow" />
+	
+	<style name="Animations.PopDownWindow.Center">
+		<item name="@android:windowEnterAnimation">@anim/grow_from_top</item>
+		<item name="@android:windowExitAnimation">@anim/shrink_from_bottom</item>
+	</style>
+	
+	<style name="Animations.PopDownWindow.Left">
+		<item name="@android:windowEnterAnimation">@anim/grow_from_topleft_to_bottomright</item>
+		<item name="@android:windowExitAnimation">@anim/shrink_from_bottomright_to_topleft</item>
+	</style>
+	
+	<style name="Animations.PopDownWindow.Right">
+		<item name="@android:windowEnterAnimation">@anim/grow_from_topright_to_bottomleft</item>
+		<item name="@android:windowExitAnimation">@anim/shrink_from_bottomleft_to_topright</item>
+	</style>
+	
+	<style name="Animations.PopDownWindow.Reflect">
+		<item name="@android:windowEnterAnimation">@anim/pump_top</item>
+		<item name="@android:windowExitAnimation">@anim/disappear</item>
+	</style>
+	
+    <style name="Animations.PopUpWindow" />
+
+    <style name="Animations.PopUpWindow.Center">
+        <item name="@android:windowEnterAnimation">@anim/grow_from_bottom</item>
+        <item name="@android:windowExitAnimation">@anim/shrink_from_top</item>
+    </style>
+
+    <style name="Animations.PopUpWindow.Left">
+        <item name="@android:windowEnterAnimation">@anim/grow_from_bottomleft_to_topright</item>
+        <item name="@android:windowExitAnimation">@anim/shrink_from_topright_to_bottomleft</item>
+    </style>
+
+    <style name="Animations.PopUpWindow.Right">
+        <item name="@android:windowEnterAnimation">@anim/grow_from_bottomright_to_topleft</item>
+        <item name="@android:windowExitAnimation">@anim/shrink_from_topleft_to_bottomright</item>
+    </style>
+
+    <style name="Animations.PopUpWindow.Reflect">
+        <item name="@android:windowEnterAnimation">@anim/pump_bottom</item>
+        <item name="@android:windowExitAnimation">@anim/disappear</item>
+    </style>
+    
+      <!-- Widget Styles -->  
+    
+    
+
+    <style name="GestureOverlayView">
+        <item name="android:gestureStrokeWidth">12.0</item>
+        <item name="android:gestureColor">#ffffff00</item>
+        <item name="android:uncertainGestureColor">#48ffff00</item>
+        <item name="android:fadeOffset">420</item>
+        <item name="android:fadeDuration">150</item>
+        <item name="android:gestureStrokeLengthThreshold">50.0</item>
+        <item name="android:gestureStrokeSquarenessThreshold">0.275</item>
+        <item name="android:gestureStrokeAngleThreshold">40.0</item>
+        <item name="android:eventsInterceptionEnabled">true</item>
+    </style>
+    
+</resources>

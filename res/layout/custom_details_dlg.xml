@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="?attr/popupBg"
+    android:orientation="vertical" >
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/dialog_topbar_height"
+        android:gravity="center_vertical"
+        android:background="?attr/popupTopbarBg" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            
+            android:layout_alignParentLeft="true"
+            
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:layout_marginLeft="@dimen/clipart_view_margin"
+            
+            android:text="@string/details"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/dialog_title_text_size" />
+
+
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="0px"
+        android:layout_marginLeft="0dip"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+
+        <ListView
+            android:id="@+id/details_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            
+            android:padding="15dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/btnClose"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dialog_btn_height"
+        android:layout_weight="0"
+        android:background="?attr/btnPopBg"
+        android:layout_marginLeft="15dip"
+        android:layout_marginRight="15dip"
+        android:layout_marginBottom="20dip"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/close"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/large_text_size" />
+    </LinearLayout>
+
+</LinearLayout>

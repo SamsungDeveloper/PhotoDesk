@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/editor"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/editor_area"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?attr/contentViewBG" >
+
+        <RelativeLayout
+            android:id="@+id/scanvas_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" >
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/setting_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/spen_setting_margin"
+            android:layout_marginTop="@dimen/spen_setting_margin"
+            android:background="#00000000" >
+        </LinearLayout>
+    </RelativeLayout>
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/editor_menu_bar" />
+
+</RelativeLayout>

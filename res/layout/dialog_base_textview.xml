@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tvSummary"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textSize="@dimen/large_text_size"
+    android:textColor="#FFFFFFFF"
+    android:paddingLeft="@dimen/dialog_topbar_padding_left"
+    android:paddingTop="@dimen/dialog_base_summary_padding_top" 
+    android:paddingRight="@dimen/dialog_topbar_padding_left"
+    android:paddingBottom="@dimen/dialog_base_summary_padding_bottom" />

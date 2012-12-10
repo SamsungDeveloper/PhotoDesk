@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <bool name="support_simple_folder">true</bool>
+    <bool name="support_list_folder">true</bool>
+    <bool name="support_grid_folder">false</bool>
+    
+    <bool name="device_orientation">false</bool>
+</resources>

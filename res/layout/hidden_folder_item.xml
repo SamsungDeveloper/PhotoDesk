@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/large_grid_item_height"
+    android:padding="1dp" >
+
+    <com.samsung.photodesk.view.GridFolderItemView
+        android:id="@+id/iVImageSub3"
+        android:layout_width="@dimen/large_grid_thumb_width"
+        android:layout_height="@dimen/large_grid_thumb_height"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/large_grid_item_margin_top"
+        android:background="@drawable/shadow_folder"
+        android:paddingBottom="@dimen/folder_large_thumb_padding_bottom"
+        android:paddingLeft="@dimen/folder_large_thumb_padding_left"
+        android:paddingRight="@dimen/folder_large_thumb_padding_right"
+        android:paddingTop="@dimen/folder_large_thumb_padding_top"
+        android:scaleType="fitXY" />
+
+    <com.samsung.photodesk.view.GridFolderItemView
+        android:id="@+id/iVImageSub2"
+        android:layout_width="@dimen/large_grid_thumb_width"
+        android:layout_height="@dimen/large_grid_thumb_height"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/large_grid_item_margin_top"
+        android:background="@drawable/shadow_folder"
+        android:paddingBottom="@dimen/folder_large_thumb_padding_bottom"
+        android:paddingLeft="@dimen/folder_large_thumb_padding_left"
+        android:paddingRight="@dimen/folder_large_thumb_padding_right"
+        android:paddingTop="@dimen/folder_large_thumb_padding_top"
+        android:scaleType="fitXY" />
+
+    <com.samsung.photodesk.view.GridFolderItemView
+        android:id="@+id/iVImageSub1"
+        android:layout_width="@dimen/large_grid_thumb_width"
+        android:layout_height="@dimen/large_grid_thumb_height"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/large_grid_item_margin_top"
+        android:background="@drawable/shadow_folder"
+        android:paddingBottom="@dimen/folder_large_thumb_padding_bottom"
+        android:paddingLeft="@dimen/folder_large_thumb_padding_left"
+        android:paddingRight="@dimen/folder_large_thumb_padding_right"
+        android:paddingTop="@dimen/folder_large_thumb_padding_top"
+        android:scaleType="fitXY" />
+
+    <com.samsung.photodesk.view.GridFolderItemView
+        android:id="@+id/ivFolderImage"
+        android:layout_width="@dimen/large_grid_thumb_width"
+        android:layout_height="@dimen/large_grid_thumb_height"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/large_grid_item_margin_top"
+        android:background="@drawable/shadow_folder"
+        android:paddingBottom="@dimen/folder_large_thumb_padding_bottom"
+        android:paddingLeft="@dimen/folder_large_thumb_padding_left"
+        android:paddingRight="@dimen/folder_large_thumb_padding_right"
+        android:paddingTop="@dimen/folder_large_thumb_padding_top"
+        android:scaleType="fitXY" />
+
+    <ImageView
+        android:id="@+id/iVCheck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@id/ivFolderImage"
+        android:layout_marginRight="@dimen/large_grid_item_margin_top"
+        android:layout_marginTop="@dimen/large_grid_item_margin_top"
+        android:src="?attr/contentViewImageCheckBox"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tVName"
+        android:layout_width="@dimen/large_grid_thumb_width"
+        android:layout_height="@dimen/large_grid_thumb_height"
+        android:layout_below="@id/ivFolderImage"
+        android:layout_marginLeft="@dimen/large_grid_item_margin_top"
+        android:textColor="?attr/folderViewBaseText"
+        android:textSize="@dimen/base_text_size"
+        android:singleLine="true" />
+
+</RelativeLayout>

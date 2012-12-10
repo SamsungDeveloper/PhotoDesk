@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory android:title="@string/setting_main_option" >
+        <ListPreference
+            android:defaultValue="1"
+            android:dialogTitle="@string/type_change_dialogtitle"
+            android:entries="@array/setting_theme_typelist"
+            android:entryValues="@array/setting_theme_typelist_value"
+            android:key="@string/type_change_prefkey"
+            android:summary="@string/type_change_summary"
+            android:title="@string/type_change_title"
+
+             />
+
+        <PreferenceScreen
+            android:dialogTitle="@string/type_change_dialogtitle"
+            android:key="@string/cache_delete_prefkey"
+            android:summary="@string/cache_delete_summary"
+            android:title="@string/cache_delete_title" />
+        
+        <PreferenceScreen
+            android:dialogTitle="@string/help_info_dialogtitle"
+            android:key="@string/help_info_prefkey"
+            android:summary="@string/help_info_summary"
+            android:title="@string/help_info_title" />
+
+        <PreferenceScreen
+            android:dialogTitle="@string/program_info_dialogtitle"
+            android:key="@string/program_info_prefkey"
+            android:summary="@string/program_info_summary"
+            android:title="@string/program_info_title" />
+                
+    </PreferenceCategory>
+
+</PreferenceScreen>

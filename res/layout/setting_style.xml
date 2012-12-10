@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android1="http://schemas.android.com/apk/res/android"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:padding="5dp"
+   >
+
+ <!--    <RadioGroup
+        android:id="@+id/rgStyle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="15dp" >
+
+        <RadioButton
+            android:id="@+id/radioBasic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/base_padding"
+            android:paddingBottom="@dimen/base_padding"
+            android:text="Basic"
+            android:textSize="@dimen/large_text_size"
+            android:textStyle="bold"
+            android:button="?attr/themePopUpRadioBtn" />
+
+        <RadioButton
+            android:id="@+id/radioStitch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/base_padding"
+            android:paddingBottom="@dimen/base_padding"
+            android:text="Stitch" 
+            android:textSize="@dimen/large_text_size"
+            android:textStyle="bold"
+            android:button="?attr/themePopUpRadioBtn" />
+        
+        <RadioButton
+            android:id="@+id/radioMintCheck"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/base_padding"
+            android:paddingBottom="@dimen/base_padding"
+            android:text="Mint-Check"
+            android:textSize="@dimen/large_text_size"
+            android:textStyle="bold"
+            android:button="?attr/themePopUpRadioBtn" />
+
+    </RadioGroup>
+ -->
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+         android1:background="#ffffff" 
+        android1:gravity="center" >
+
+        <Button
+            android1:id="@+id/btnBasic"
+            android1:layout_width="match_parent"
+            android1:layout_height="wrap_content"
+            android:text="Basic"
+            android:textSize="@dimen/xx_large_text_size"
+            android:textStyle="bold"
+            android1:background="@drawable/type1_pop_list_bg" />
+
+        <Button
+            android1:id="@+id/btnStitch"
+            android1:layout_width="match_parent"
+            android1:layout_height="wrap_content"
+            android:text="Stitch"
+            android:textSize="@dimen/xx_large_text_size"
+            android:textStyle="bold"
+            android1:background="@drawable/type2_pop_list_bg" />
+
+
+        <Button
+            android1:id="@+id/btnMintCheck"
+            android1:layout_width="match_parent"
+            android1:layout_height="wrap_content"
+            android:text="Mint-Check"
+            android:textSize="@dimen/xx_large_text_size"
+            android:textStyle="bold"
+            android1:background="@drawable/type3_pop_list_bg" />
+
+    </LinearLayout>
+
+</LinearLayout>

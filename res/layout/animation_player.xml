@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/preview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/contentViewBG" >
+
+    <RelativeLayout
+        android:id="@+id/preview_scanvas_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" >
+
+        <com.samsung.photodesk.editor.PhotoDeskScanvasView
+            android:id="@+id/preview_scanvas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        layout="@layout/animation_player_frame" />  
+
+</RelativeLayout>

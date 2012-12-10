@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.samsung.photodesk"
+    android:versionCode="5"
+    android:versionName="1.0.4" >
+
+    <uses-sdk android:minSdkVersion="14" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>  
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+    <uses-permission android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    
+    <application
+        android:icon="@drawable/ic_launcher"
+        android:theme="@android:style/Theme.Holo.NoActionBar.Fullscreen"
+        android:label="@string/app_name"
+        android:logo="@drawable/main_actionbar_icon_album" 
+        android:hardwareAccelerated="true" 
+        android:name=".PhotoDeskApplication"
+        android:largeHeap="true"
+        android:debuggable="true">
+        
+        <uses-library android:name="com.google.android.maps"/>
+        <activity android:name=".Intro" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".PhotoDeskActivity" >
+            <intent-filter>
+                    <action android:name="android.intent.action.CREATE_SHORTCUT" />
+                    <action android:name="android.intent.action.GET_CONTENT" />
+                    <category android:name="android.intent.category.DEFAULT" />
+					<data android:mimeType="image/jpeg" />
+            </intent-filter>
+        </activity>
+        
+        <activity android:name=".ImageViewActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="vnd.android.cursor.dir/image" />
+                <data android:mimeType="vnd.android.cursor.dir/video" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <action android:name="com.android.camera.action.REVIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="http" />
+                <data android:scheme="https" />
+                <data android:scheme="content" />
+                <data android:scheme="file" />
+                <data android:mimeType="image/bmp" />
+                <data android:mimeType="image/jpeg" />
+                 <data android:mimeType="image/jpg" />
+                <data android:mimeType="image/gif" />
+                <data android:mimeType="image/png" />
+                <data android:mimeType="image/x-ms-bmp" />
+                <data android:mimeType="image/vnd.wap.wbmp" />
+
+            </intent-filter>
+        </activity>
+        <activity android:name=".editor.ImageEditorActivity" 
+			android:configChanges="orientation|screenSize"
+            android:hardwareAccelerated="false" ></activity>
+        <activity android:name=".editor.AnimationImagePlayerActivity" 
+            android:configChanges="orientation|screenSize"> </activity>
+        <activity android:name=".editor.EditorSettingActivity"> </activity>
+        <activity android:name=".SettingActivity"> </activity>
+        <activity android:name=".ThemeSetActivity"> </activity>
+        <activity android:name=".HelpInfoActivity"> </activity>                              
+        <activity android:name=".HiddenFolderActivity"></activity>        
+        <activity android:name=".MapViewEdit"></activity>        
+
+             <activity android:name=".PhotoDeskSignatureRegistration"
+            android:label="@string/signature_registration"
+            android:theme="@style/Theme.CustomDialog" >
+
+            <!-- android:theme="@android:style/Theme.Dialog" > -->
+        </activity>
+        <activity
+            android:name=".PhotoDeskSignatureVerification"
+            android:label="@string/signature_verification"
+            android:theme="@style/Theme.CustomDialog" >
+
+            <!-- android:theme="@android:style/Theme.Dialog" > -->
+        </activity>
+
+
+        <activity android:name="com.sec.photodesk.MapSelectedItemActivity"> </activity>
+        <activity android:name=".SlideShowActivity" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" />        
+            
+        <receiver android:name=".util.BroadcastReceiverUtil">
+         <intent-filter>
+          <action android:name="android.intent.action.MEDIA_CHECKING" />      
+          <action android:name="android.intent.action.MEDIA_MOUNTED" />
+          <action android:name="android.intent.action.MEDIA_UNMOUNTED" />
+          <action android:name="android.intent.action.MEDIA_REMOVED" />
+          <action android:name="android.intent.action.MEDIA_EJECT" />
+          <action android:name="android.intent.action.MEDIA_SCANNER_STARTED" />
+          <action android:name="android.intent.action.MEDIA_SCANNER_FINISHED" />
+          <action android:name="android.intent.action.MEDIA_SCANNER_SCAN_FILE" />
+          
+          <data android:scheme="file" />
+         </intent-filter>
+        </receiver>        
+    </application>
+
+</manifest>

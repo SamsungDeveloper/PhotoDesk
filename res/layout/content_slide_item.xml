@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/content_slide_gellary_width"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <com.samsung.photodesk.view.GridContentItemView
+        android:id="@+id/iVImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop" />
+
+    <FrameLayout 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+    <ImageView
+        android:id="@+id/iVPlay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/media_play_s"
+        android:visibility="gone" />
+        <ImageView
+	        android:id="@+id/iVAniPlay" 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:src="@drawable/ams_play_s"
+	        android:visibility="gone"/>
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/iVCheck" 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:src="?attr/folderViewSelectCheckBox"
+        android:visibility="gone"/>         
+
+    <ImageView
+        android:id="@+id/iVProtect" 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/iVImage"
+        android:layout_alignBottom="@+id/iVImage"
+        android:layout_marginBottom="@dimen/content_slide_protect_margin_bottom"
+        android:layout_marginRight="@dimen/content_slide_protect_margin_right"
+        android:src="@drawable/icon_protection_s"
+        android:visibility="gone"/>
+</RelativeLayout>

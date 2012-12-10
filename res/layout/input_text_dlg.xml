@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="left"
+    android:orientation="horizontal"
+    
+    android:minWidth="@dimen/dialog_width"    
+    android:padding="10dp" >
+
+    <LinearLayout
+        android:layout_width="@dimen/dialog_width"
+        android:layout_height="match_parent"
+        android:layout_gravity="fill_horizontal"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/etFoldername"
+            android:layout_width="fill_parent"
+            android:layout_gravity="fill_horizontal"
+            android:layout_height="54dip"
+            android:textSize="20dip"
+            android:maxLength="128"
+            android:singleLine="true"
+             />
+    </LinearLayout>
+
+</LinearLayout>

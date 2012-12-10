@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/map_small_item_width"
+    android:layout_height="@dimen/map_small_item_height"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:padding="1dp" >
+
+    <RelativeLayout
+        android:layout_width="@dimen/map_small_item_width"
+        android:layout_height="@dimen/map_small_item_height"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+	    android:layout_gravity="center">
+
+        <ImageView
+            android:id="@+id/location_image4"
+            android:layout_width="@dimen/map_small_thumb_width"
+            android:layout_height="@dimen/map_small_thumb_height"
+            android:layout_centerInParent="true"
+            android:paddingBottom="@dimen/folder_grid_thumb_padding_bottom"
+            android:paddingLeft="@dimen/folder_grid_thumb_padding_left"
+            android:paddingRight="@dimen/folder_grid_thumb_padding_right"
+            android:paddingTop="@dimen/folder_grid_thumb_padding_top"
+            android:scaleType="fitXY" />
+
+        <ImageView
+            android:id="@+id/location_image3"
+            android:layout_width="@dimen/map_small_thumb_width"
+            android:layout_height="@dimen/map_small_thumb_height"
+            android:layout_centerInParent="true"
+            android:paddingBottom="@dimen/folder_grid_thumb_padding_bottom"
+            android:paddingLeft="@dimen/folder_grid_thumb_padding_left"
+            android:paddingRight="@dimen/folder_grid_thumb_padding_right"
+            android:paddingTop="@dimen/folder_grid_thumb_padding_top"
+            android:scaleType="fitXY" />
+
+        <ImageView
+            android:id="@+id/location_image2"
+            android:layout_width="@dimen/map_small_thumb_width"
+            android:layout_height="@dimen/map_small_thumb_height"
+            android:layout_centerInParent="true"
+            android:paddingBottom="@dimen/folder_grid_thumb_padding_bottom"
+            android:paddingLeft="@dimen/folder_grid_thumb_padding_left"
+            android:paddingRight="@dimen/folder_grid_thumb_padding_right"
+            android:paddingTop="@dimen/folder_grid_thumb_padding_top"
+            android:scaleType="fitXY" />
+        
+         <ImageView
+            android:id="@+id/location_image1"
+            android:layout_width="@dimen/map_small_thumb_width"
+            android:layout_height="@dimen/map_small_thumb_height"
+            android:layout_centerInParent="true"
+            android:paddingBottom="@dimen/folder_grid_thumb_padding_bottom"
+            android:paddingLeft="@dimen/folder_grid_thumb_padding_left"
+            android:paddingRight="@dimen/folder_grid_thumb_padding_right"
+            android:paddingTop="@dimen/folder_grid_thumb_padding_top"
+            android:scaleType="fitXY" /> 
+
+     </RelativeLayout>
+
+</RelativeLayout>
+

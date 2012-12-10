@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout android:layout_marginTop="?android:attr/actionBarSize"
+    android:id="@+id/settingView"
+    android:layout_width="match_parent" 
+    android:layout_height="match_parent"
+	android:background="?attr/contentViewBG" 
+	xmlns:android="http://schemas.android.com/apk/res/android">
+    
+    
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#29000000" >
+    </FrameLayout>
+ 
+        <ScrollView
+            android:id="@+id/scrollView1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/setting_left_margin"
+            android:layout_marginRight="@dimen/setting_left_margin"
+            android:background="?attr/contentViewBG" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+
+
+                <LinearLayout
+                    android:id="@+id/llTypeChange"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/setting_item_height"
+                    android:background="?attr/baseSelector"
+                    android:clickable="true"
+                    android:paddingLeft="@dimen/setting_left_text_margin" 
+                    android:gravity="center_vertical" >
+
+                    <TextView
+                        android:id="@+id/tvTypeChange"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/type_change_title"
+                        android:textColor="?attr/defaultTextColor"
+                        android:textSize="@dimen/x_large_text_size" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/imageView1"
+                    android:background="?attr/settingLine"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+               <LinearLayout
+                    android:id="@+id/llCacheDelete"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/setting_item_height"
+                    android:background="?attr/baseSelector"
+                    android:clickable="true"
+                    android:paddingLeft="@dimen/setting_left_text_margin" 
+                    android:gravity="center_vertical" >
+
+                    <TextView
+                        android:id="@+id/tvCacheDelete"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="?attr/defaultTextColor"
+                        android:text="@string/cache_delete_title"
+                        android:textSize="@dimen/x_large_text_size" />
+                </LinearLayout>
+
+ 				<ImageView
+                    android:id="@+id/imageView1"
+                    android:background="?attr/settingLine"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <LinearLayout
+                    android:id="@+id/llIncludeVideo"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/setting_item_height"
+                    android:background="?attr/baseSelector"
+                    android:clickable="false"
+                    android:paddingLeft="@dimen/setting_left_text_margin" 
+                    android:paddingRight="@dimen/setting_right_text_margin" 
+                    android:gravity="center_vertical" >
+
+			        <Switch android:id="@+id/tvIncludeVideo"
+			                android:text="@string/includevideo_info_title"
+			                android:textSize="@dimen/x_large_text_size"
+			                android:textColor="?attr/defaultTextColor"
+			                android:layout_width="match_parent"
+			                android:layout_height="wrap_content"
+			                android:textOn="ON"
+			                android:textOff="OFF" />                    
+                </LinearLayout>
+               
+                 <ImageView
+                    android:id="@+id/imageView1"
+                    android:background="?attr/settingLine"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <LinearLayout
+                    android:id="@+id/llHelp"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/setting_item_height"
+                    android:background="?attr/baseSelector"
+                    android:clickable="true"
+                    android:paddingLeft="@dimen/setting_left_text_margin" 
+                    android:gravity="center_vertical" >
+
+                    <TextView
+                        android:id="@+id/tvHelp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="?attr/defaultTextColor"
+                        android:text="@string/help_info_title"
+                        android:textSize="@dimen/x_large_text_size" />
+                </LinearLayout>
+
+
+                <ImageView
+                    android:id="@+id/imageView1"
+                    android:background="?attr/settingLine"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <LinearLayout
+                     android:id="@+id/llAbout"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/setting_item_height"
+                    android:background="?attr/baseSelector"
+                    android:clickable="true"
+                    android:paddingLeft="@dimen/setting_left_text_margin" 
+                    android:gravity="center_vertical" >
+
+                    <TextView 
+                        android:id="@+id/tvAbout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="?attr/defaultTextColor"
+                        android:text="@string/program_info_title"
+                        android:textSize="@dimen/x_large_text_size" />
+                </LinearLayout>
+                
+                 <ImageView
+                    android:id="@+id/imageView1"
+                    android:background="?attr/settingLine"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                
+            </LinearLayout>
+        </ScrollView>
+        
+        <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/actionbar_shadow_height"
+        android:background="?attr/actionBarShadow" />
+
+</FrameLayout>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="?attr/popupBg"
+    android:gravity="center_horizontal">
+
+    <RelativeLayout
+        android:id="@+id/lLTitleBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/popupTopbarBg"
+        android:gravity="center_vertical"
+        android:minHeight="@dimen/dialog_topbar_height"
+	    android:paddingLeft="@dimen/dialog_topbar_padding_left"
+	    android:paddingRight="@dimen/dialog_topbar_padding_right" >
+
+        <ImageView
+            android:id="@+id/ivIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:text="title"
+            android:textColor="#ffffffff"
+            android:textSize="@dimen/dialog_title_text_size" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lLTitleBar"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="12dip"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/dialog_title_text_size"
+	    android:layout_marginLeft="@dimen/dialog_topbar_padding_left"
+	    android:layout_marginRight="@dimen/dialog_topbar_padding_right" />
+
+    <ProgressBar
+        android:id="@+id/progress"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/message"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dip"
+        android:scrollbarSize="20dip"
+	    android:layout_marginLeft="@dimen/dialog_topbar_padding_left"
+	    android:layout_marginRight="@dimen/dialog_topbar_padding_right"  />
+
+    <TextView
+        android:id="@+id/progress_percent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/progress"
+        android:paddingBottom="12dip"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/dialog_title_text_size"
+	    android:layout_marginLeft="@dimen/dialog_topbar_padding_left"  />
+
+    <TextView
+        android:id="@+id/progress_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/progress"
+        android:paddingBottom="12dip"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/dialog_title_text_size"
+	    android:layout_marginRight="@dimen/dialog_topbar_padding_right"  />
+
+    <RelativeLayout
+        android:id="@+id/RLBtnGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/progress_percent"
+        android:layout_gravity="bottom"
+        android:gravity="top|center_horizontal"
+        android:minHeight="@dimen/dialog_btn_group_height"
+        android:visibility="gone"
+	    android:layout_marginLeft="@dimen/dialog_topbar_padding_left"
+	    android:layout_marginRight="@dimen/dialog_topbar_padding_right"  >
+
+        <Button
+            android:id="@+id/cancelbutton"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dialog_btn_height"
+            android:background="?attr/btnPopBg"
+            android:textColor="#ffffffff"
+            android:textSize="@dimen/large_text_size"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</RelativeLayout>

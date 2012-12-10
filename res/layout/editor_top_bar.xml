@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/back_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/editor_top_bar_margin"
+            android:background="@null"
+            android:src="?attr/actionBarIconAlbum" />
+
+        <ImageButton
+            android:id="@+id/reset_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/editor_top_bar_margin"
+            android:background="@null"
+            android:src="?attr/actionBarIconDel" />
+
+        <ImageButton
+            android:id="@+id/save_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/editor_top_bar_margin"
+            android:background="@null"
+            android:src="?attr/actionBarIconSave" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/title_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:singleLine="true"
+        android:textColor="#ffffffff"
+        android:textSize="@dimen/editor_top_bar_text_size" >
+    </TextView>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/redo_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/editor_top_bar_margin"
+            android:background="@null"
+            android:src="?attr/actionBarIconRedo" />
+
+        <ImageButton
+            android:id="@+id/undo_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/editor_top_bar_margin"
+            android:background="@null"
+            android:src="?attr/actionBarIconUndo" />
+
+        <ImageButton
+            android:id="@+id/setting_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/editor_top_bar_margin"
+            android:background="@null"
+            android:src="?attr/actionBarIconSetting"/>
+    </LinearLayout>
+
+</RelativeLayout>

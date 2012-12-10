@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <integer name="device_dpi">1</integer>
+    
+    <integer name="thumb_size">182</integer>
+    <integer name="thumb_crop_size_w">182</integer>
+    <integer name="thumb_crop_size_h">157</integer>
+    
+    <bool name="support_exif_thumb">false</bool>
+</resources>

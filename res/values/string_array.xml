@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<string-array name="forder_list">
+	 	<item>1.  </item>
+	 	<item>2.  </item>
+	 	<item>3.   </item>
+	 	<item>4.  </item>
+	 	<item>5.   </item>
+	 	<item>6.   </item>
+		<item>7. </item>
+	</string-array>
+	
+	<string-array name="image_editor_save_kinds">
+		<item>JPG Image</item>
+		<item>Animation Data</item>
+	</string-array>   
+	
+    <string-array name="Sigature_array">
+        <item>[Signature registration]</item>
+        <item>[Signature Re-registration]</item>        
+
+    </string-array>
+    <string-array name="signature_threshold">
+        <item>Low</item>
+        <item>Medium</item>
+        <item>High</item>
+    </string-array>
+        <string-array name="password_array">
+        <item>[Setting password]</item>
+        <item>[Changing password]</item>
+    </string-array>
+ 
+        <string-array name="setting_theme_typelist">
+        <item>Basic</item>
+        <item>Stitch</item>
+        <item>Mint-Check</item>
+    </string-array>      
+    
+	<string-array name="setting_theme_typelist_value">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+            
+    <string-array name="imageoperation_level">
+		<item>Very Small</item>
+		<item>Small</item>
+		<item>Medium</item>
+		<item>Large</item>
+		<item>Very Large</item>
+	</string-array>
+	
+	<string-array name="save_image_size">
+        <item>Original</item>
+        <item>Medium</item>
+        <item>Compact</item>
+    </string-array>
+    
+	<string-array name="save_image_size_value">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    
+	<string-array name="save_image_quality">
+        <item>Maximum</item>
+        <item>Medium</item>
+        <item>Minimum</item>
+    </string-array>
+    
+	<string-array name="save_image_quality_value">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    
+	<string-array name="animation_speed">
+        <item>Slow</item>
+        <item>Normal</item>
+        <item>Fast</item>
+        <item>Max</item>
+        <item>Auto</item>                
+    </string-array>
+    
+	<string-array name="animation_speed_value">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+	
+	<string-array name="filters_name">
+	    <item>Original</item>
+	    <item>Automatic</item>
+	    <item>Gray</item>
+	    <item>Sepia</item>
+	    <item>Mint</item>
+	    <item>Reversal</item>
+	    <item>Brightly</item>
+	    <item>Darkly</item>
+	    <item>Vintage</item>
+	    <item>Blurring</item>
+	    <item>Retro</item>
+	    <item>Charcoal</item>
+	    <item>Color Sketch</item>
+	    <item>Sunshine</item>
+	    <item>Mosaic</item>
+	    <item>Pop art</item>
+	    <item>Magic pen</item>
+	    <item>Oil painting</item>
+	    <item>Cartoon</item>
+	    <item>Classic</item>
+	</string-array>
+</resources>

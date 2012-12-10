@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="?android:attr/actionBarSize"
+    android:background="?attr/contentViewBG"
+    android:orientation="vertical" >
+
+    <com.samsung.photodesk.view.FastScrollView
+        android:id="@+id/FSIndexer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <GridView
+            android:id="@+id/gVImages"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:columnWidth="@dimen/thumb_width"
+            android:gravity="center"
+            android:horizontalSpacing="@dimen/content_thumb_spacing"
+            android:numColumns="auto_fit"
+            android:paddingLeft="@dimen/base_padding"
+            android:paddingRight="@dimen/content_right_padding"
+            android:scrollbars="none"
+            android:verticalSpacing="5dip"
+            android:duplicateParentState="true" />
+
+        <RelativeLayout
+            android:id="@+id/rLScrollbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:background="?attr/contentViewScrollBar"
+            android:visibility="gone" >
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tVSection"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="#55000000"
+            android:paddingLeft="20dip"
+            android:paddingRight="20dip"
+            android:textColor="#ffffffff"
+            android:textSize="@dimen/content_grid_section_text_size"
+            android:textStyle="bold"
+            android:visibility="gone" />
+    </com.samsung.photodesk.view.FastScrollView>
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        layout="@layout/folder_view_open" />
+
+</RelativeLayout>

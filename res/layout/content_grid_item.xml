@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res/com.samsung.photodesk"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:duplicateParentState="true" >
+
+    <com.samsung.photodesk.view.GridContentItemView
+        android:id="@+id/iVImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?attr/contentViewImageShadow"
+        android:duplicateParentState="true"
+        android:paddingBottom="@dimen/content_grid_image_padding_bottom"
+        android:paddingLeft="@dimen/content_grid_image_padding_left"
+        android:paddingRight="@dimen/content_grid_image_padding_right"
+        android:paddingTop="@dimen/content_grid_image_padding_top"
+        android:scaleType="fitXY"
+        custom:type="1" />
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" >
+
+        <ImageView
+            android:id="@+id/iVPlay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/media_play"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/iVAniPlay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ams_play_middle"
+            android:visibility="gone" />
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/iVCheck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/iVImage"
+        android:layout_alignTop="@id/iVImage"
+        android:layout_marginRight="@dimen/content_image_check_margin_right"
+        android:layout_marginTop="@dimen/content_image_check_margin_top"
+        android:src="?attr/contentViewImageCheckBox"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/iVProtect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/iVImage"
+        android:layout_alignRight="@+id/iVImage"
+        android:layout_marginBottom="@dimen/content_image_protect_margin_bottom"
+        android:layout_marginRight="@dimen/content_image_protect_margin_right"
+        android:src="@drawable/icon_protection"
+        android:visibility="gone" />
+
+</RelativeLayout>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    
+    <dimen name="simple_thumb_width">120dip</dimen>
+    <dimen name="simple_thumb_height">100dip</dimen>
+    <dimen name="simple_item_height">160dip</dimen>
+    
+    <dimen name="content_right_padding">10dp</dimen>
+    
+    <!-- ================================Signature xlarge===================================== -->
+    <dimen name="signature_dlg_width">500dip</dimen>
+    <dimen name="signature_dlg_height">530dip</dimen>
+    <dimen name="signature_dlg_marginright">20dip</dimen>
+    <dimen name="signature_dlg_marginleft">20dip</dimen>
+        <dimen name="signature_dlg_margintop">20dip</dimen>
+    <dimen name="signature_dlg_paddingbottom">20dip</dimen>
+    <dimen name="signature_dlg_paddingleft">20dip</dimen>
+    <dimen name="signature_dlg_paddingright">20dip</dimen>
+    <dimen name="signature_dlg_paddingtop">20dip</dimen>
+    
+    <!--  SETTING VIEW -->
+    <dimen name="setting_left_margin">50dp</dimen>
+    
+    
+               <!-- ================================Hover popup xhdpi=====================================  -->   
+    <dimen name="hover_popup_scrollview_layout_margin_top_width">12dip</dimen>
+    <dimen name="hover_popup_arrowdown_layout_margin_top_width">-10dip</dimen>
+   <dimen name="hover_popup_maxwidth">500dip</dimen>
+    
+   
+       <dimen name="input_dialog_height">300dp</dimen>
+       <dimen name="myalbum_title_dialog_height">300dp</dimen>
+</resources>

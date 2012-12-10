@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:icon="?attr/actionBarIconSort"
+        android:showAsAction="always"
+        android:title="@string/view">
+        <menu>
+            <item
+                android:id="@+id/view_grid"
+                android:title="@string/grid">
+            </item>
+            <item
+                android:id="@+id/view_slide"
+                android:title="@string/slide">
+            </item>
+            <item
+                android:id="@+id/view_map"
+                android:title="@string/map">
+            </item>
+        </menu>
+    </item>
+    <item
+        android:id="@+id/camera"
+        android:icon="?attr/actionBarIconCamera"
+        android:showAsAction="always"
+        android:title="@string/camera">
+    </item>
+    <item
+        android:id="@+id/align"
+        android:showAsAction="never|collapseActionView"
+        android:title="@string/sort">
+        <menu>
+            <group android:checkableBehavior="single" >
+                <item
+                    android:id="@+id/align_name_asc"
+                    android:checked="true"
+                    android:title="@string/by_name_ascend">
+                </item>
+                <item
+                    android:id="@+id/align_name_desc"
+                    android:title="@string/by_name_descend">
+                </item>
+                <item
+                    android:id="@+id/align_date_asc"
+                    android:title="@string/by_date_ascend">
+                </item>
+                <item
+                    android:id="@+id/align_date_desc"
+                    android:title="@string/by_date_descend">
+                </item>
+            </group>
+        </menu>
+    </item>
+    <item
+        android:id="@+id/show_hidden_folder"
+        android:icon="?attr/actionBarIconSetting"
+        android:showAsAction="never|withText"
+        android:title="@string/show_hidden_folder"/>                
+	<item
+        android:id="@+id/fullunprotect"
+        android:icon="?attr/actionBarIconProtect"
+        android:showAsAction="never|withText"
+        android:title="@string/full_unprotect">
+    </item>
+    <item
+        android:id="@+id/signature"
+        android:icon="?attr/actionBarIconProtect"
+        android:showAsAction="never|collapseActionView"
+        android:title="@string/signature">
+        <menu>
+            <item
+                android:id="@+id/new_signature"
+                android:title="@string/signature_registration">
+            </item>
+            <item
+                android:id="@+id/re_signature"
+                android:title="@string/signature_re_registration">
+            </item>
+        </menu>
+    </item>
+    
+   <item
+        android:id="@+id/image_editor"
+        android:icon="?attr/actionBarIconSetting"
+        android:showAsAction="never|withText"
+        android:title="@string/image_editor"/>
+        
+    <item
+        android:id="@+id/setting"
+        android:icon="?attr/actionBarIconSetting"
+        android:showAsAction="never|withText"
+        android:title="@string/settings"/>
+
+</menu>

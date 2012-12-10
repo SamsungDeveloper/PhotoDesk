@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/signature_dlg_width"
+    android:layout_height="@dimen/signature_dlg_height"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/signature_dlg_marginleft"
+        android:layout_marginRight="@dimen/signature_dlg_marginright"
+        android:layout_marginTop="@dimen/signature_dlg_margintop" >
+
+        <LinearLayout
+            android:id="@+id/btnSignatureSave"
+            android:layout_width="0px"
+            android:layout_height="54dip"
+            android:layout_weight="1"
+            android:padding="10dip"
+            android:background="?attr/btnPopBg"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/signature_registration_registration_title"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/large_text_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/btnRetry"
+            android:layout_width="0px"
+            android:layout_height="54dip"
+            android:padding="10dip"
+            android:layout_marginLeft="10dip"
+            android:layout_weight="1"
+            android:background="?attr/btnPopBg"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/signature_retry_title"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/large_text_size" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/canvas_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/signature_dlg_paddingbottom"
+        android:paddingLeft="@dimen/signature_dlg_paddingleft"
+        android:paddingRight="@dimen/signature_dlg_paddingright"
+        android:paddingTop="@dimen/signature_dlg_paddingtop" >
+
+        <ImageView
+            android:id="@+id/canvas_default_background"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/pop_signature_pat"
+            android:tileMode="repeat" />
+
+        <com.samsung.spensdk.SCanvasView
+            android:id="@+id/canvas_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawing_bar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="?attr/actionBarShadow" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/edit_draw_menu_layout_margin"
+        android:paddingTop="3dip" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="?attr/editToolsLayerStroke"
+            android:orientation="horizontal"
+            android:padding="4dip" 
+            android:layout_marginBottom="3dip">
+
+            <ImageButton
+                android:id="@+id/pencil_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/edit_draw_menu_margin_right"
+                android:background="?attr/editToolsLayerBG"
+                android:src="?attr/editIconPenOnPen" />
+
+            <ImageButton
+                android:id="@+id/eraser_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/edit_draw_menu_margin_right"
+                android:background="?attr/editToolsLayerBG"
+                android:src="?attr/editIconEraserOnHand" />
+
+            <ImageButton
+                android:id="@+id/note_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:src="?attr/editIconText" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center_vertical"
+        android:paddingTop="3dip" 
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="?attr/editToolsLayerStroke"
+            android:orientation="horizontal"
+            android:padding="4dip" 
+            android:layout_marginBottom="3dip">
+
+            <ImageButton
+                android:id="@+id/clipart_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/edit_draw_menu_margin_right"
+                android:background="@null"
+                android:src="?attr/editIconAddPic" />
+
+            <ImageButton
+                android:id="@+id/filter_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:src="?attr/editIconFilter" />
+            
+             <ImageButton
+                    android:id="@+id/image_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:src="?attr/editIconImagePlus"
+                    android:visibility="gone" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="center_vertical"
+        android:paddingTop="3dip" 
+        android:layout_marginRight="@dimen/edit_draw_menu_layout_margin"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="?attr/editToolsLayerStroke"
+            android:orientation="horizontal"
+            android:padding="4dip"
+            android:layout_marginBottom="1dip">
+
+            <ImageButton
+                android:id="@+id/audio_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/edit_draw_menu_margin_right"
+                android:background="@null"
+                android:src="?attr/editIconMusic" />
+
+            <ImageButton
+                android:id="@+id/voicerecord_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/edit_draw_menu_margin_right"
+                android:background="@null"
+                android:src="?attr/editIconVoice" />
+
+            <ImageButton
+                android:id="@+id/animation_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:src="?attr/editIconAnima" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

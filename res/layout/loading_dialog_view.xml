@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/loading_dialog_width"
+    android:layout_height="wrap_content"
+    android:background="?attr/popupBg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/loading_dialog_view_margin_left"
+        android:layout_marginRight="@dimen/loading_dialog_view_margin_left"
+        android:layout_marginTop="@dimen/loading_dialog_view_margin_top"
+        android:orientation="horizontal" >
+
+        <ProgressBar
+            style="?android:attr/progressBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="12dip" />
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFFFF"
+            android:textSize="@dimen/loading_dialog_cancel_btn_text_size" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/loading_dialog_view_margin_left"
+        android:layout_marginRight="@dimen/loading_dialog_view_margin_left"
+        android:layout_marginTop="@dimen/loading_dialog_view_margin_top" >
+
+        <ImageView
+            android:id="@+id/iVContentImage"
+            android:layout_width="@dimen/loading_dialog_folder_thumb_width"
+            android:layout_height="@dimen/loading_dialog_folder_thumb_height"
+            android:scaleType="fitXY" />
+
+        <TextView
+            android:id="@+id/contentTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/iVContentImage"
+            android:ellipsize="end"
+            android:maxLines="3"
+            android:paddingLeft="@dimen/loading_dialog_text_padding_left"
+            android:text="ImageName"
+            android:textColor="#ffffffff"
+            android:textSize="@dimen/loading_dialog_text_size" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/loading_dialog_arrow_margin_bottom"
+        android:layout_marginTop="@dimen/loading_dialog_arrow_margin_top"
+        android:src="@drawable/moving_symbols_arrow" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/loading_dialog_view_margin_left"
+        android:layout_marginRight="@dimen/loading_dialog_view_margin_left"
+        android:gravity="center_vertical" >
+
+        <ImageView
+            android:id="@+id/ivFolderImage3"
+            android:layout_width="@dimen/loading_dialog_folder_thumb_width"
+            android:layout_height="@dimen/loading_dialog_folder_thumb_height"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="12dip"
+            android:scaleType="fitXY" />
+
+        <ImageView
+            android:id="@+id/ivFolderImage2"
+            android:layout_width="@dimen/loading_dialog_folder_thumb_width"
+            android:layout_height="@dimen/loading_dialog_folder_thumb_height"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="8dip"
+            android:layout_marginTop="4dip"
+            android:scaleType="fitXY" />
+
+        <ImageView
+            android:id="@+id/ivFolderImage1"
+            android:layout_width="@dimen/loading_dialog_folder_thumb_width"
+            android:layout_height="@dimen/loading_dialog_folder_thumb_height"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="4dip"
+            android:layout_marginTop="8dip"
+            android:scaleType="fitXY" />
+
+        <ImageView
+            android:id="@+id/ivFolderImage"
+            android:layout_width="@dimen/loading_dialog_folder_thumb_width"
+            android:layout_height="@dimen/loading_dialog_folder_thumb_height"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="12dip"
+            android:scaleType="fitXY" />
+
+        <TextView
+            android:id="@+id/folderNameTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/ivFolderImage"
+            android:ellipsize="end"
+            android:maxLines="3"
+            android:paddingLeft="@dimen/loading_dialog_text_padding_left"
+            android:text="folder Name"
+            android:textColor="#ffffffff"
+            android:textSize="@dimen/loading_dialog_text_size" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/copy_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/loading_dialog_cancel_btn_height"
+        android:layout_marginBottom="@dimen/loading_dialog_cancel_btn_marginbottom"
+        android:layout_marginLeft="@dimen/loading_dialog_view_margin_left"
+        android:layout_marginRight="@dimen/loading_dialog_view_margin_left"
+        android:layout_marginTop="@dimen/loading_dialog_cancel_btn_margintop"
+        android:background="?attr/btnPopBg"
+        android:text="@string/cancel"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/loading_dialog_cancel_btn_text_size" />
+
+</LinearLayout>

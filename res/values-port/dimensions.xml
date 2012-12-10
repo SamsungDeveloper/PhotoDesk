@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <dimen name="thumb_width">100dip</dimen>
+    <dimen name="thumb_height">85dip</dimen>
+    
+    
+    <dimen name="base_padding">5dp</dimen>
+    <dimen name="content_top_padding">10dp</dimen>
+    <dimen name="content_right_padding">5dp</dimen>
+    
+    <!--  SETTING VIEW -->
+    <dimen name="setting_left_margin">30dp</dimen>
+
+    <!-- ================================Signature xlarge===================================== -->
+    <dimen name="signature_dlg_width">350dip</dimen>
+    <dimen name="signature_dlg_height">530dip</dimen>
+    <dimen name="signature_dlg_marginright">10dip</dimen>
+    <dimen name="signature_dlg_marginleft">10dip</dimen>
+    <dimen name="signature_dlg_margintop">10dip</dimen>
+    <dimen name="signature_dlg_paddingbottom">10dip</dimen>
+    <dimen name="signature_dlg_paddingleft">10dip</dimen>
+    <dimen name="signature_dlg_paddingright">10dip</dimen>
+    <dimen name="signature_dlg_paddingtop">10dip</dimen>
+    
+    
+    <dimen name="input_dialog_height">300dp</dimen>
+    <dimen name="myalbum_title_dialog_height">100dp</dimen>
+       
+    <dimen name="myalbum_page_actionbar_size">0dip</dimen>
+</resources>

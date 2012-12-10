@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@null"
+    android:id="@+id/animation_frame">
+    
+    <RelativeLayout 
+		android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       	android:layout_alignParentTop="true"
+        android:id="@+id/top_bar"
+        android:background="?attr/imageDetailActionBar">
+			<ImageButton 
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignParentLeft="true"
+				android:layout_marginLeft="20dip"
+				android:layout_marginTop="10dip"
+				android:background="@null"
+				android:src="?attr/actionBarIconAlbum"
+				android:id="@+id/back_btn"/>
+             
+			
+            <TextView
+                android:layout_width="250dip"
+				android:layout_height="wrap_content"
+				android:layout_centerInParent="true"
+				android:gravity="center"
+				android:singleLine="true"
+				android:textColor="#ffffffff"
+				android:textSize="25dp"
+				android:id="@+id/title_text"></TextView>
+			
+			<ImageButton 
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignParentRight="true"
+				android:layout_marginRight="20dip"
+				android:layout_marginTop="10dip"
+				android:background="@null"
+				android:src="?attr/actionBarIconSetting"
+				android:id="@+id/setting_btn"/>		
+     </RelativeLayout>
+     
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       	android:layout_alignParentBottom="true"
+        android:id="@+id/player_bar"
+        android:background="@drawable/ams_bar_bg">
+		<RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            android:layout_marginLeft="@dimen/animation_play_btn_margin_left"
+            android:layout_marginRight="@dimen/animation_play_btn_margin_right"
+            android:layout_marginTop="@dimen/animation_play_btn_margin_top"
+            android:layout_marginBottom="@dimen/animation_play_btn_margin_bottom"
+            android:layout_gravity="center_vertical" >
+
+            <ImageButton
+                android:id="@+id/startBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:src="@drawable/ams_play"
+                android:background="@null"/>
+
+            <ImageButton
+                android:id="@+id/stopBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ams_pause"
+                android:background="@null"/>
+        </RelativeLayout>
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="40dip"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:progressDrawable="@drawable/animation_progress"
+            android:layout_gravity="center_vertical" />
+        
+    </LinearLayout>
+    
+
+</RelativeLayout>
