@@ -17,6 +17,13 @@ Documentation
 
 Documentation is hosted at Samsung developers Web Site.
 
+- Overview
+- Chapter 1. [Utilizing Fragments](http://developer.samsung.com/android/technical-docs/Photo-Desk-Chapter-1-Utilizing-Fragments)
+- Chapter 2. Configuring Image Editor
+- Chapter 3. Utilizing S Pen Events
+- Chapter 4. Applying Security Features
+- Chapter 5. Changing Application Themes
+- Chapter 6. Threading and Caching
 
 
 License
@@ -45,6 +52,6 @@ __2.	Specialized Features for S Pen SDK__
 
 Contact us
 ------------
- - S Pen SDK Forum: [http://developer.samsung.com/forum/android/s-pen-sdk]([http://developer.samsung.com/forum/android/s-pen-sdk)
+ - S Pen SDK Forum: [http://developer.samsung.com/forum/android/s-pen-sdk](http://developer.samsung.com/forum/android/s-pen-sdk)
  - Twitter: [https://twitter.com/samsung_dev](https://twitter.com/samsung_dev)
  - Facebook: [http://www.facebook.com/groups/samsungdevelopers/](http://www.facebook.com/groups/samsungdevelopers/)
